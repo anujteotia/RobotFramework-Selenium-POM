@@ -1,9 +1,7 @@
 #common properties
 browser = "chromium"
-win_chrome_driver_exe = "../WebDrivers/chromedriver.exe"
-win_firefox_driver_exe = "../WebDrivers/geckodriver.exe"
-mac_chrome_driver_exe = "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/WebDrivers/chromedriver"
-mac_firefox_driver_exe = "../WebDrivers/geckodriver"
+win_chrome_driver_exe = "${OUTPUTDIR}/WebDrivers/chromedriver.exe"
+mac_chrome_driver_exe = "${OUTPUTDIR}/WebDrivers/chromedriver"
 timeout = "15s"
 set_selenium_speed = "0.5s"
 

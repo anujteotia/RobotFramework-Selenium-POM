@@ -1,7 +1,7 @@
 *** Settings ***
 Library     SeleniumLibrary
 Library     Browser
-Variables   ../Pages/locators.py
+Variables   ${OUTPUTDIR}/Pages/locators.py
 
 *** Keywords ***
 I Open '${url}' in '${browser}' Browser

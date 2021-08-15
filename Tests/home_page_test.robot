@@ -1,5 +1,4 @@
 *** Settings ***
-#Suite Teardown  Close All Browsers
 Resource        ./settings.robot
 Force Tags      HOME_PAGE
 

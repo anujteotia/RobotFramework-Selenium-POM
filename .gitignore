@@ -1,2 +1,6 @@
 **.pyc
 **.DS_Store
+**traces
+**.html
+playwright-log.txt
+**.xml

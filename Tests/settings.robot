@@ -1,4 +1,4 @@
 *** Settings ***
-Resource        ../Resources/home_page_keywords.robot
-Resource        ../Resources/common_keywords.robot
-Variables       ../Pages/locators.py
+Resource        ${OUTPUTDIR}/Resources/home_page_keywords.robot
+Resource        ${OUTPUTDIR}/Resources/common_keywords.robot
+Variables       ${OUTPUTDIR}/Pages/locators.py
