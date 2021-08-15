@@ -7,15 +7,11 @@ Variables   ${OUTPUTDIR}/Pages/locators.py
 I Open '${url}' in '${browser}' Browser
     [Documentation]  This keyword opens given url in the browser of the choice.
     ${webdriver_exe}    Set Executable Path For Different Platforms    ${browser}
-    New Browser   browser=${browser}   headless=False
+    New Browser   browser=${browser}   headless=${headless_driver}
+    Set Browser Timeout    ${browser_timeout}
     New Context   httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}
     New Page   ${url}
-    Sleep   5s
-#    Create Webdriver    ${browser}    executable_path=${webdriver_exe}
-#    Maximize Browser Window
-#    Go To    ${url}
-#    Set Browser Implicit Wait    ${timeout}
-#    Set Selenium Speed	${set_selenium_speed}
+    Sleep   ${sleep_time}
 
 Set Web Driver Executable Path For Windows
     [Documentation]  This keyword sets the path for driver executable

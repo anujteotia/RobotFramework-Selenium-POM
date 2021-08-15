@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.8.5 on darwin)" generated="20210815 21:02:48.404" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1 (Python 3.8.5 on darwin)" generated="20210815 21:46:03.770" rpa="false" schemaversion="2">
 <suite id="s1" name="Home Page Test" source="/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Tests/home_page_test.robot">
 <test id="s1-t1" name="Validate Home Page">
 <kw name="Given I Open '${site_url}' in '${browser}' Browser" library="common_keywords" sourcename="I Open '${url}' in '${browser}' Browser">
@@ -13,8 +13,8 @@
 <arg>platform.system()</arg>
 <arg>platform</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20210815 21:02:49.509" level="INFO">${system} = Darwin</msg>
-<status status="PASS" starttime="20210815 21:02:49.509" endtime="20210815 21:02:49.509"/>
+<msg timestamp="20210815 21:46:04.647" level="INFO">${system} = Darwin</msg>
+<status status="PASS" starttime="20210815 21:46:04.646" endtime="20210815 21:46:04.647"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <var>${webdriver_exe}</var>
@@ -42,53 +42,61 @@
 <kw name="Set Variable" library="BuiltIn">
 <arg>${mac_chrome_driver_exe}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" starttime="20210815 21:02:49.511" endtime="20210815 21:02:49.511"/>
+<status status="PASS" starttime="20210815 21:46:04.648" endtime="20210815 21:46:04.649"/>
 </kw>
-<msg timestamp="20210815 21:02:49.511" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
-<status status="PASS" starttime="20210815 21:02:49.510" endtime="20210815 21:02:49.511"/>
-</kw>
-<kw name="Should Not Be Empty" library="BuiltIn">
-<arg>${webdriver_exe}</arg>
-<arg>msg=Unable to set the path for webdriver executable.</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<msg timestamp="20210815 21:02:49.512" level="INFO">Length is 36</msg>
-<status status="PASS" starttime="20210815 21:02:49.511" endtime="20210815 21:02:49.512"/>
-</kw>
-<status status="PASS" starttime="20210815 21:02:49.510" endtime="20210815 21:02:49.512"/>
-</kw>
-<msg timestamp="20210815 21:02:49.512" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
-<status status="PASS" starttime="20210815 21:02:49.509" endtime="20210815 21:02:49.512"/>
+<msg timestamp="20210815 21:46:04.649" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
+<status status="PASS" starttime="20210815 21:46:04.648" endtime="20210815 21:46:04.649"/>
 </kw>
 <kw name="Should Not Be Empty" library="BuiltIn">
 <arg>${webdriver_exe}</arg>
 <arg>msg=Unable to set the path for webdriver executable.</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<msg timestamp="20210815 21:02:49.513" level="INFO">Length is 36</msg>
-<status status="PASS" starttime="20210815 21:02:49.512" endtime="20210815 21:02:49.513"/>
+<msg timestamp="20210815 21:46:04.649" level="INFO">Length is 36</msg>
+<status status="PASS" starttime="20210815 21:46:04.649" endtime="20210815 21:46:04.650"/>
 </kw>
-<msg timestamp="20210815 21:02:49.513" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
-<status status="PASS" starttime="20210815 21:02:49.508" endtime="20210815 21:02:49.513"/>
+<status status="PASS" starttime="20210815 21:46:04.647" endtime="20210815 21:46:04.650"/>
+</kw>
+<msg timestamp="20210815 21:46:04.650" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
+<status status="PASS" starttime="20210815 21:46:04.647" endtime="20210815 21:46:04.650"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${webdriver_exe}</arg>
+<arg>msg=Unable to set the path for webdriver executable.</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<msg timestamp="20210815 21:46:04.651" level="INFO">Length is 36</msg>
+<status status="PASS" starttime="20210815 21:46:04.650" endtime="20210815 21:46:04.651"/>
+</kw>
+<msg timestamp="20210815 21:46:04.651" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
+<status status="PASS" starttime="20210815 21:46:04.645" endtime="20210815 21:46:04.651"/>
 </kw>
 <kw name="New Browser" library="Browser">
 <arg>browser=${browser}</arg>
-<arg>headless=False</arg>
+<arg>headless=${headless_driver}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20210815 21:02:49.514" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/e4174f71-7c69-490d-9aa0-46c4a5f49688"}</msg>
-<msg timestamp="20210815 21:02:50.208" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/e4174f71-7c69-490d-9aa0-46c4a5f49688"}</msg>
-<status status="PASS" starttime="20210815 21:02:49.513" endtime="20210815 21:02:50.209"/>
+<msg timestamp="20210815 21:46:04.653" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/589096e8-1bb8-40cc-ba36-1eb4be962532"}</msg>
+<msg timestamp="20210815 21:46:04.966" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/589096e8-1bb8-40cc-ba36-1eb4be962532"}</msg>
+<status status="PASS" starttime="20210815 21:46:04.652" endtime="20210815 21:46:04.966"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>30 seconds</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20210815 21:46:04.971" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210815 21:46:04.966" endtime="20210815 21:46:04.971"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20210815 21:02:50.212" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
-<msg timestamp="20210815 21:02:50.263" level="INFO">Successfully created context. </msg>
-<msg timestamp="20210815 21:02:50.263" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
-<status status="PASS" starttime="20210815 21:02:50.209" endtime="20210815 21:02:50.263"/>
+<msg timestamp="20210815 21:46:04.973" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210815 21:46:04.991" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210815 21:46:04.991" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210815 21:46:04.971" endtime="20210815 21:46:04.991"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${url}</arg>
@@ -97,22 +105,22 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20210815 21:02:52.977" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
-<status status="PASS" starttime="20210815 21:02:50.264" endtime="20210815 21:02:52.978"/>
+<msg timestamp="20210815 21:46:06.216" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210815 21:46:04.991" endtime="20210815 21:46:06.217"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>5s</arg>
+<arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210815 21:02:57.980" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210815 21:02:52.978" endtime="20210815 21:02:57.981"/>
+<msg timestamp="20210815 21:46:09.218" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210815 21:46:06.217" endtime="20210815 21:46:09.218"/>
 </kw>
-<status status="PASS" starttime="20210815 21:02:49.507" endtime="20210815 21:02:57.982"/>
+<status status="PASS" starttime="20210815 21:46:04.645" endtime="20210815 21:46:09.219"/>
 </kw>
 <doc>This test case validates Home Page</doc>
 <tag>HOME_PAGE</tag>
-<status status="PASS" starttime="20210815 21:02:49.503" endtime="20210815 21:02:57.982"/>
+<status status="PASS" starttime="20210815 21:46:04.641" endtime="20210815 21:46:09.219"/>
 </test>
-<status status="PASS" starttime="20210815 21:02:48.408" endtime="20210815 21:02:58.155"/>
+<status status="PASS" starttime="20210815 21:46:03.772" endtime="20210815 21:46:09.283"/>
 </suite>
 <statistics>
 <total>
@@ -126,6 +134,6 @@ Returns a stable identifier for the created page.</doc>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210815 21:02:48.461" level="WARN">Imported resource file '/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Resources/home_page_keywords.robot' is empty.</msg>
+<msg timestamp="20210815 21:46:03.808" level="WARN">Imported resource file '/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Resources/home_page_keywords.robot' is empty.</msg>
 </errors>
 </robot>
