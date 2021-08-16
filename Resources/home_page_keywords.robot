@@ -26,3 +26,7 @@ Validate Pagination On Home Page
     ...   expected_value=1   message=Feed Article Pagination is not Present.
     Log  ${count_pages}
 
+Open Sign Up Page
+    [Documentation]   This keyword will click on sign up link in conduit home page
+    Browser.Click   selector=${sign_up_link}
+

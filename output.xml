@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.8.5 on darwin)" generated="20210816 12:53:09.447" rpa="false" schemaversion="2">
-<suite id="s1" name="Home Page Test" source="/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Tests/home_page_test.robot">
-<test id="s1-t1" name="Validate Home Page">
+<robot generator="Robot 4.1 (Python 3.8.5 on darwin)" generated="20210816 16:27:03.241" rpa="false" schemaversion="2">
+<suite id="s1" name="Profile Page Test" source="/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Tests/profile_page_test.robot">
+<test id="s1-t1" name="Register A User">
 <kw name="Given I Open '${site_url}' in '${browser}' Browser" library="common_keywords" sourcename="I Open '${url}' in '${browser}' Browser">
 <doc>This keyword opens given url in the browser of the choice.</doc>
 <kw name="Set Executable Path For Different Platforms" library="common_keywords">
@@ -13,8 +13,8 @@
 <arg>platform.system()</arg>
 <arg>platform</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20210816 12:53:10.823" level="INFO">${system} = Darwin</msg>
-<status status="PASS" starttime="20210816 12:53:10.822" endtime="20210816 12:53:10.823"/>
+<msg timestamp="20210816 16:27:04.617" level="INFO">${system} = Darwin</msg>
+<status status="PASS" starttime="20210816 16:27:04.616" endtime="20210816 16:27:04.617"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <var>${webdriver_exe}</var>
@@ -42,32 +42,32 @@
 <kw name="Set Variable" library="BuiltIn">
 <arg>${mac_chrome_driver_exe}</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" starttime="20210816 12:53:10.824" endtime="20210816 12:53:10.824"/>
+<status status="PASS" starttime="20210816 16:27:04.618" endtime="20210816 16:27:04.619"/>
 </kw>
-<msg timestamp="20210816 12:53:10.825" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
-<status status="PASS" starttime="20210816 12:53:10.824" endtime="20210816 12:53:10.825"/>
-</kw>
-<kw name="Should Not Be Empty" library="BuiltIn">
-<arg>${webdriver_exe}</arg>
-<arg>msg=Unable to set the path for webdriver executable.</arg>
-<doc>Verifies that the given item is not empty.</doc>
-<msg timestamp="20210816 12:53:10.825" level="INFO">Length is 36</msg>
-<status status="PASS" starttime="20210816 12:53:10.825" endtime="20210816 12:53:10.825"/>
-</kw>
-<status status="PASS" starttime="20210816 12:53:10.823" endtime="20210816 12:53:10.825"/>
-</kw>
-<msg timestamp="20210816 12:53:10.825" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
-<status status="PASS" starttime="20210816 12:53:10.823" endtime="20210816 12:53:10.825"/>
+<msg timestamp="20210816 16:27:04.619" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
+<status status="PASS" starttime="20210816 16:27:04.618" endtime="20210816 16:27:04.619"/>
 </kw>
 <kw name="Should Not Be Empty" library="BuiltIn">
 <arg>${webdriver_exe}</arg>
 <arg>msg=Unable to set the path for webdriver executable.</arg>
 <doc>Verifies that the given item is not empty.</doc>
-<msg timestamp="20210816 12:53:10.826" level="INFO">Length is 36</msg>
-<status status="PASS" starttime="20210816 12:53:10.826" endtime="20210816 12:53:10.826"/>
+<msg timestamp="20210816 16:27:04.619" level="INFO">Length is 36</msg>
+<status status="PASS" starttime="20210816 16:27:04.619" endtime="20210816 16:27:04.619"/>
 </kw>
-<msg timestamp="20210816 12:53:10.826" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
-<status status="PASS" starttime="20210816 12:53:10.822" endtime="20210816 12:53:10.826"/>
+<status status="PASS" starttime="20210816 16:27:04.617" endtime="20210816 16:27:04.620"/>
+</kw>
+<msg timestamp="20210816 16:27:04.620" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
+<status status="PASS" starttime="20210816 16:27:04.617" endtime="20210816 16:27:04.620"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${webdriver_exe}</arg>
+<arg>msg=Unable to set the path for webdriver executable.</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<msg timestamp="20210816 16:27:04.621" level="INFO">Length is 36</msg>
+<status status="PASS" starttime="20210816 16:27:04.620" endtime="20210816 16:27:04.621"/>
+</kw>
+<msg timestamp="20210816 16:27:04.621" level="INFO">${webdriver_exe} = ${OUTPUTDIR}/WebDrivers/chromedriver</msg>
+<status status="PASS" starttime="20210816 16:27:04.616" endtime="20210816 16:27:04.621"/>
 </kw>
 <kw name="New Browser" library="Browser">
 <arg>browser=${browser}</arg>
@@ -76,27 +76,27 @@
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20210816 12:53:10.827" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/34820204-6ce6-4389-8755-164cbac0d618"}</msg>
-<msg timestamp="20210816 12:53:11.746" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/34820204-6ce6-4389-8755-164cbac0d618"}</msg>
-<status status="PASS" starttime="20210816 12:53:10.826" endtime="20210816 12:53:11.746"/>
+<msg timestamp="20210816 16:27:04.623" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/0d6fbdd6-b0d6-4c0b-8674-217b358cfb16"}</msg>
+<msg timestamp="20210816 16:27:05.308" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/0d6fbdd6-b0d6-4c0b-8674-217b358cfb16"}</msg>
+<status status="PASS" starttime="20210816 16:27:04.622" endtime="20210816 16:27:05.309"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${browser_timeout}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20210816 12:53:11.753" level="INFO">No context open.</msg>
-<status status="PASS" starttime="20210816 12:53:11.747" endtime="20210816 12:53:11.753"/>
+<msg timestamp="20210816 16:27:05.320" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210816 16:27:05.309" endtime="20210816 16:27:05.320"/>
 </kw>
 <kw name="New Context" library="Browser">
 <arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20210816 12:53:11.755" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
-<msg timestamp="20210816 12:53:11.817" level="INFO">Successfully created context. </msg>
-<msg timestamp="20210816 12:53:11.817" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
-<status status="PASS" starttime="20210816 12:53:11.753" endtime="20210816 12:53:11.818"/>
+<msg timestamp="20210816 16:27:05.323" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210816 16:27:05.399" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210816 16:27:05.399" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210816 16:27:05.320" endtime="20210816 16:27:05.399"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${url}</arg>
@@ -105,18 +105,18 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20210816 12:53:14.235" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
-<status status="PASS" starttime="20210816 12:53:11.818" endtime="20210816 12:53:14.235"/>
+<msg timestamp="20210816 16:27:08.198" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210816 16:27:05.399" endtime="20210816 16:27:08.199"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>${sleep_time}</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20210816 12:53:19.237" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20210816 12:53:14.236" endtime="20210816 12:53:19.237"/>
+<msg timestamp="20210816 16:27:13.200" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210816 16:27:08.199" endtime="20210816 16:27:13.200"/>
 </kw>
-<status status="PASS" starttime="20210816 12:53:10.821" endtime="20210816 12:53:19.238"/>
+<status status="PASS" starttime="20210816 16:27:04.615" endtime="20210816 16:27:13.201"/>
 </kw>
-<kw name="Then Validate Title In Home Page" library="home_page_keywords">
+<kw name="When Validate Title In Home Page" library="home_page_keywords">
 <doc>This keyword validates tile of the home page</doc>
 <kw name="Get Title" library="Browser">
 <var>${title}</var>
@@ -127,91 +127,114 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20210816 12:53:19.253" level="INFO">${title} = Conduit</msg>
-<status status="PASS" starttime="20210816 12:53:19.240" endtime="20210816 12:53:19.253"/>
+<msg timestamp="20210816 16:27:13.222" level="INFO">${title} = Conduit</msg>
+<status status="PASS" starttime="20210816 16:27:13.202" endtime="20210816 16:27:13.222"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210816 12:53:19.254" level="INFO">Conduit</msg>
-<status status="PASS" starttime="20210816 12:53:19.253" endtime="20210816 12:53:19.254"/>
+<msg timestamp="20210816 16:27:13.223" level="INFO">Conduit</msg>
+<status status="PASS" starttime="20210816 16:27:13.223" endtime="20210816 16:27:13.223"/>
 </kw>
-<status status="PASS" starttime="20210816 12:53:19.239" endtime="20210816 12:53:19.254"/>
+<status status="PASS" starttime="20210816 16:27:13.201" endtime="20210816 16:27:13.223"/>
 </kw>
-<kw name="And Validate Tags are present" library="home_page_keywords">
-<doc>This keyword validates that the tags are present in the homepage</doc>
-<kw name="Get Element Count" library="Browser">
-<var>${count_tags}</var>
-<arg>selector=${homepage_tags}</arg>
-<arg>assertion_operator=greater than</arg>
-<arg>expected_value=1</arg>
-<arg>message=Tags aren't present in homepage</arg>
+<kw name="And Open Sign Up Page" library="home_page_keywords">
+<doc>This keyword will click on sign up link in conduit home page</doc>
+<kw name="Click" library="Browser">
+<arg>selector=${sign_up_link}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210816 16:27:13.224" endtime="20210816 16:27:13.439"/>
+</kw>
+<status status="PASS" starttime="20210816 16:27:13.224" endtime="20210816 16:27:13.439"/>
+</kw>
+<kw name="Then Validate Register Url" library="profile_page_keywords">
+<doc>This keyword validates tile of the home page</doc>
+<kw name="Get Url" library="Browser">
+<var>${url}</var>
+<arg>assertion_operator=should end with</arg>
+<arg>assertion_expected=register</arg>
+<arg>message=Unable to open register page.</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<msg timestamp="20210816 12:53:19.813" level="INFO">${count_tags} = 791</msg>
-<status status="PASS" starttime="20210816 12:53:19.256" endtime="20210816 12:53:19.813"/>
+<doc>Returns the current URL.</doc>
+<msg timestamp="20210816 16:27:13.444" level="INFO">${url} = https://qa-task.backbasecloud.com/register</msg>
+<status status="PASS" starttime="20210816 16:27:13.440" endtime="20210816 16:27:13.445"/>
 </kw>
 <kw name="Log" library="BuiltIn">
-<arg>${count_tags}</arg>
+<arg>${url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210816 12:53:19.813" level="INFO">791</msg>
-<status status="PASS" starttime="20210816 12:53:19.813" endtime="20210816 12:53:19.814"/>
+<msg timestamp="20210816 16:27:13.446" level="INFO">https://qa-task.backbasecloud.com/register</msg>
+<status status="PASS" starttime="20210816 16:27:13.445" endtime="20210816 16:27:13.446"/>
 </kw>
-<status status="PASS" starttime="20210816 12:53:19.255" endtime="20210816 12:53:19.814"/>
+<status status="PASS" starttime="20210816 16:27:13.439" endtime="20210816 16:27:13.446"/>
 </kw>
-<kw name="And List Of Articles Is Present" library="home_page_keywords">
-<doc>This keyword checks that global feed articles are present.</doc>
-<kw name="Get Element Count" library="Browser">
-<var>${count_articles}</var>
-<arg>selector=${global_feed_articles}</arg>
-<arg>assertion_operator=&gt;=</arg>
-<arg>expected_value=1</arg>
-<arg>message=Articles aren't present in Global Feed</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
+<kw name="And Enter User Name" library="profile_page_keywords">
+<arg>${username}</arg>
+<doc>This keyword enter user name for sign up</doc>
+<kw name="Fill Text" library="Browser">
+<arg>selector=${username_txt_box}</arg>
+<arg>txt=${username}</arg>
 <tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<msg timestamp="20210816 12:53:20.006" level="INFO">${count_articles} = 10</msg>
-<status status="PASS" starttime="20210816 12:53:19.814" endtime="20210816 12:53:20.006"/>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210816 16:27:13.448" level="INFO">Fills the text 'candidatex1' in the given field.</msg>
+<status status="PASS" starttime="20210816 16:27:13.447" endtime="20210816 16:27:13.522"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${count_articles}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210816 12:53:20.007" level="INFO">10</msg>
-<status status="PASS" starttime="20210816 12:53:20.006" endtime="20210816 12:53:20.007"/>
+<status status="PASS" starttime="20210816 16:27:13.447" endtime="20210816 16:27:13.522"/>
 </kw>
-<status status="PASS" starttime="20210816 12:53:19.814" endtime="20210816 12:53:20.007"/>
-</kw>
-<kw name="And Validate Pagination On Home Page" library="home_page_keywords">
-<doc>This keyword checks for the list of pagination of articles</doc>
-<kw name="Get Element Count" library="Browser">
-<var>${count_pages}</var>
-<arg>selector=${article_pagination}</arg>
-<arg>assertion_operator=&gt;=</arg>
-<arg>expected_value=1</arg>
-<arg>message=Feed Article Pagination is not Present.</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
+<kw name="And Enter Email Id" library="profile_page_keywords">
+<arg>${email_id}</arg>
+<doc>This keyword enter email id for sign up</doc>
+<kw name="Fill Text" library="Browser">
+<arg>selector=${email_txt_box}</arg>
+<arg>txt=${email_id}</arg>
 <tag>PageContent</tag>
-<doc>Returns the count of elements found with ``selector``.</doc>
-<msg timestamp="20210816 12:53:20.179" level="INFO">${count_pages} = 265</msg>
-<status status="PASS" starttime="20210816 12:53:20.007" endtime="20210816 12:53:20.179"/>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210816 16:27:13.525" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20210816 16:27:13.524" endtime="20210816 16:27:13.586"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${count_pages}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210816 12:53:20.180" level="INFO">265</msg>
-<status status="PASS" starttime="20210816 12:53:20.179" endtime="20210816 12:53:20.180"/>
+<status status="PASS" starttime="20210816 16:27:13.523" endtime="20210816 16:27:13.587"/>
 </kw>
-<status status="PASS" starttime="20210816 12:53:20.007" endtime="20210816 12:53:20.180"/>
+<kw name="And Enter Password" library="profile_page_keywords">
+<arg>${password}</arg>
+<doc>This keyword enter password for sign up</doc>
+<kw name="Fill Secret" library="Browser">
+<arg>selector=${pwd_txt_box}</arg>
+<arg>secret=$password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Fills the given secret from ``variable_name`` into the
+text field found by ``selector``.</doc>
+<status status="PASS" starttime="20210816 16:27:13.588" endtime="20210816 16:27:13.649"/>
+</kw>
+<status status="PASS" starttime="20210816 16:27:13.587" endtime="20210816 16:27:13.649"/>
+</kw>
+<kw name="Then Click Sign Up Button" library="profile_page_keywords">
+<doc>This keyword clicks on the sign up button</doc>
+<kw name="Click" library="Browser">
+<arg>selector=${sign_up_button}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210816 16:27:13.650" endtime="20210816 16:27:13.740"/>
+</kw>
+<status status="PASS" starttime="20210816 16:27:13.649" endtime="20210816 16:27:13.741"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210816 16:27:18.742" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210816 16:27:13.741" endtime="20210816 16:27:18.742"/>
 </kw>
 <doc>This test case login using basic authentication and validates Home Page</doc>
 <tag>HOME_PAGE</tag>
-<status status="PASS" starttime="20210816 12:53:10.818" endtime="20210816 12:53:20.181"/>
+<status status="PASS" starttime="20210816 16:27:04.611" endtime="20210816 16:27:18.743"/>
 </test>
-<status status="PASS" starttime="20210816 12:53:09.449" endtime="20210816 12:53:20.346"/>
+<status status="PASS" starttime="20210816 16:27:03.243" endtime="20210816 16:27:18.944"/>
 </suite>
 <statistics>
 <total>
@@ -221,7 +244,7 @@ Returns a stable identifier for the created page.</doc>
 <stat pass="1" fail="0" skip="0">HOME_PAGE</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Home Page Test">Home Page Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Profile Page Test">Profile Page Test</stat>
 </suite>
 </statistics>
 <errors>
