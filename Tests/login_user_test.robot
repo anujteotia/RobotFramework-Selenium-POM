@@ -4,7 +4,7 @@ Force Tags      LOGIN_USER
 
 *** Variables ***
 ${email_id}   candidatex@gmail.com
-${password}   qa-is-cool
+${password}   qa-is-cool1
 
 *** Test Cases ***
 Sign In For Registered User

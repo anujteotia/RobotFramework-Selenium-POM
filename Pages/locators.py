@@ -3,7 +3,7 @@ browser = "chromium"
 headless_driver = "False"
 win_chrome_driver_exe = "${OUTPUTDIR}/WebDrivers/chromedriver.exe"
 mac_chrome_driver_exe = "${OUTPUTDIR}/WebDrivers/chromedriver"
-browser_timeout = "30s"
+browser_timeout = "10s"
 sleep_time = "5s"
 set_selenium_speed = "0.5s"
 
@@ -25,6 +25,7 @@ sign_in_email_txt_box = "//input[@placeholder='Email']"
 sign_in_pwd_txt_box = "//input[@type='password']"
 sign_in_btn = "//button[contains(text(),'Sign in')]"
 new_article_txt = "//a[@href='/editor']"
+sign_in_error_txt = "//ul[@class='error-messages']"
 
 # Sign Up Page
 username_txt_box = "//input[@placeholder='Username']"

@@ -25,6 +25,9 @@ Click Sign In Button
 Verify Signed In
     [Documentation]  This keyword verifies whether sign up is successfull or not
     ${browser_url}   Catenate    SEPARATOR=   ${site_url}   /
+    Sleep   3s
+    ${status}   Run Keyword And Return Status   Browser.Get Text   ${sign_in_error_txt}
+    Run Keyword If   ${status}   Fail   msg=An Error Occurred!. Email or password is invalid.
     Browser.Get Url   assertion_operator=should be  assertion_expected=${browser_url}   message=Sign in unsuccessful
     Wait For Elements State   selector=${new_article_txt}   state=visible
     ${art_txt}   Browser.Get Text   selector=${new_article_txt}  assertion_operator=contains  assertion_expected=New Article
