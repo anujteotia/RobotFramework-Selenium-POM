@@ -5,7 +5,7 @@ Variables   ${OUTPUTDIR}/Pages/locators.py
 *** Keywords ***
 Validate Title In Home Page
     [Documentation]   This keyword validates tile of the home page
-    ${title}   Browser.Get Title  assertion_operator=should be  assertion_expected=Conduit  message=Unable to open Conduit homepage.
+    ${title}   Browser.Get Text   selector=${conduit_txt}  assertion_operator=should be  assertion_expected=conduit  message=Unable to open Conduit homepage.
     Log    ${title}
 
 Validate Tags are present
@@ -29,4 +29,11 @@ Validate Pagination On Home Page
 Open Sign Up Page
     [Documentation]   This keyword will click on sign up link in conduit home page
     Browser.Click   selector=${sign_up_link}
+
+Open Sign In Page
+    [Documentation]   This keyword will click on sign In link in conduit home page
+    Browser.Click   selector=${sign_in_link}
+
+
+
 

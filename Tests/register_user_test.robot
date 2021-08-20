@@ -1,10 +1,10 @@
 *** Settings ***
 Resource        ./settings.robot
-Force Tags      HOME_PAGE
+Force Tags      REGISTER_USER
 
 *** Variables ***
-${username}   new_user123
-${email_id}   candidatex@gmail.com
+${username}   new-user1
+${email_id}   new-user1@gmail.com
 ${password}   qa-is-cool
 
 *** Test Cases ***
@@ -18,5 +18,7 @@ Register A User
     And Enter Email Id   ${email_id}
     And Enter Password   ${password}
     Then Click Sign Up Button
-    Sleep  5s
+    Check Sign Up Error Message
+    Verify Sign Up   ${username}
+
 
