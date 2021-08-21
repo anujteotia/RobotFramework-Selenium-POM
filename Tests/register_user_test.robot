@@ -3,8 +3,8 @@ Resource        ./settings.robot
 Force Tags      REGISTER_USER
 
 *** Variables ***
-${username}   new-user1
-${email_id}   new-user1@gmail.com
+${username}   newuser1
+${email_id}   newuser1@gmail.com
 ${password}   qa-is-cool
 
 *** Test Cases ***
@@ -18,7 +18,6 @@ Register A User
     And Enter Email Id   ${email_id}
     And Enter Password   ${password}
     Then Click Sign Up Button
-    Check Sign Up Error Message
-    Verify Sign Up   ${username}
+    And Verify Sign Up   ${username}
 
 

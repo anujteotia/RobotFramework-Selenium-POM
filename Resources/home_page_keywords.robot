@@ -1,5 +1,4 @@
 *** Settings ***
-Library    Browser
 Variables   ${OUTPUTDIR}/Pages/locators.py
 
 *** Keywords ***
@@ -33,6 +32,8 @@ Open Sign Up Page
 Open Sign In Page
     [Documentation]   This keyword will click on sign In link in conduit home page
     Browser.Click   selector=${sign_in_link}
+
+
 
 
 
