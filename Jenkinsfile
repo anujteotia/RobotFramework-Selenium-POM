@@ -4,7 +4,7 @@ pipeline {
   stages {
 	    stage('initialize') {
 	      steps {
-	        sh 'echo "PATH= ${PATH}'
+	        sh 'echo "PATH"= '${PATH}'
 	      }
 	    }
     
