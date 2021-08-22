@@ -1,11 +1,7 @@
 *** Settings ***
 Resource            ./settings.robot
 Suite Teardown      Close Browser   ALL
-Force Tags          SETTINGS
-
-*** Variables ***
-${email_id}   candidatex@gmail.com
-${password}   qa-is-cool
+Force Tags          SETTINGS   GUI_TEST
 
 *** Test Cases ***
 Validate Settings Page
@@ -14,8 +10,8 @@ Validate Settings Page
     And Validate Title In Home Page
     When Open Sign In Page
     Then Validate Login Url
-    And Enter Sign In Email Id   ${email_id}
-    And Enter Sign In Password   ${password}
+    And Enter Sign In Email Id   ${login_emailId}
+    And Enter Sign In Password   ${login_pwd}
     Then Click Sign In Button
     And Verify Signed In
     Then Open Settings Page

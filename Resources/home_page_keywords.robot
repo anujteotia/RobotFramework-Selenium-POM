@@ -1,4 +1,5 @@
 *** Settings ***
+Library     ${OUTPUTDIR}/Libraries/Tags.py
 Variables   ${OUTPUTDIR}/Pages/locators.py
 
 *** Keywords ***
@@ -50,7 +51,11 @@ Get Signed In User Name
     ${username}   Browser.Get Text  selector=${username_user_profile_txt}
     Set Test Variable   ${username}   ${username}
 
-
+Fetch All Tags
+    [Documentation]   This keyword fetches all the tags
+    [Arguments]   ${auth_user}   ${auth_pwd}
+    ${tags_list}   Get Tags   ${auth_user}   ${auth_pwd}
+    Should Not Be Empty    ${tags_list['tags']}
 
 
 

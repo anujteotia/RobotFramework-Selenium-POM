@@ -1,11 +1,8 @@
 *** Settings ***
 Resource            ./settings.robot
 Suite Teardown      Close Browser   ALL
-Force Tags          LOGIN_USER
+Force Tags          LOGIN_USER   GUI_TEST
 
-*** Variables ***
-${email_id}   candidatex@gmail.com
-${password}   qa-is-cool
 
 *** Test Cases ***
 Sign In For Registered User
@@ -14,7 +11,7 @@ Sign In For Registered User
     And Validate Title In Home Page
     When Open Sign In Page
     Then Validate Login Url
-    And Enter Sign In Email Id   ${email_id}
-    And Enter Sign In Password   ${password}
+    And Enter Sign In Email Id   ${login_emailId}
+    And Enter Sign In Password   ${login_pwd}
     Then Click Sign In Button
     And Verify Signed In

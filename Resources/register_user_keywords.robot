@@ -9,13 +9,14 @@ Validate Register Url
 
 Enter User Name
     [Documentation]  This keyword enter user name for sign up
-    [Arguments]   ${username}
-    Fill Text   selector=${username_txt_box}   txt=${username}
+    ${login_username}   Generate Random String    12    [LOWER]
+    Set Test Variable   ${login_username}   ${login_username}
+    Fill Text   selector=${username_txt_box}   txt=${login_username}
 
 Enter Email Id
     [Documentation]  This keyword enter email id for sign up
-    [Arguments]   ${email_id}
-    Fill Text   selector=${email_txt_box}   txt=${email_id}
+    ${login_emailId}   Catenate   SEPARATOR=   ${login_username}   @gmail.com
+    Fill Text   selector=${email_txt_box}   txt=${login_emailId}
 
 Enter Password
     [Documentation]  This keyword enter password for sign up

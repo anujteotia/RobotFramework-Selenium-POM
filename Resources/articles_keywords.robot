@@ -1,6 +1,8 @@
 *** Settings ***
 Library    String
 Library    Collections
+Library    DateTime
+Library    ${OUTPUTDIR}/Libraries/Articles.py
 Variables   ${OUTPUTDIR}/Pages/locators.py
 
 *** Keywords ***
@@ -131,5 +133,34 @@ Validate Delete Article Option Is Not Available
     Browser.Get Element State   selector=${delete_article_txt_link}  state=visible   assertion_operator=should be   assertion_expected=None
     ...   message=Other user can also delete the article
 
+List Limited Articles
+    [Documentation]   This Keyword will return a number of articles
+    [Arguments]   ${limit}   ${auth_user}   ${auth_pwd}
+    ${list_articles}   List Articles   ${limit}   ${auth_user}   ${auth_pwd}
+    Set Test Variable   ${list_articles}   ${list_articles}
+    Length Should Be   item=${list_articles['articles']}   length=${limit}   msg=Articles are not returned correctly
 
+Articles Ordered By Most Recent First
+    [Documentation]   This keyword validates that articles are oredred by most recent first
+    ${list_length}   Get Length   ${list_articles['articles']}
+    ${latest_art_date}   Set Variable   ${list_articles['articles'][0]['createdAt']}
+    FOR   ${index}   IN RANGE   1   ${list_length}
+        ${date_created}   Set Variable   ${list_articles['articles'][${index}]['createdAt']}
+        ${date}   Subtract Date From Date   ${latest_art_date}   ${date_created}
+        Should Be True   ${date}>0
+        ${latest_art_date}   Set Variable   ${date_created}
+    END
+
+Create New Article
+    [Documentation]   This keyword creates a new article
+    [Arguments]   ${title}  ${description}  ${body}  ${taglist}  ${email}  ${password}  ${auth_user}  ${auth_pwd}
+    ${article_data}   Create Article   ${title}  ${description}  ${body}  ${taglist}  ${email}  ${password}  ${auth_user}  ${auth_pwd}
+    Set Test Variable   ${article_data}   ${article_data}
+
+Validate Created Article
+    [Documentation]   This keyword validates the content of article created
+    Dictionary Should Contain Key   dictionary=${article_data['article']}   key=title   msg=title is not present for new article created
+    Dictionary Should Contain Key   dictionary=${article_data['article']}   key=description   msg=title is not present for new article created
+    Dictionary Should Contain Key   dictionary=${article_data['article']}   key=body   msg=title is not present for new article created
+    Dictionary Should Contain Key   dictionary=${article_data['article']}   key=tagList   msg=title is not present for new article created
 

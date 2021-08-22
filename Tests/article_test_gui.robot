@@ -1,11 +1,9 @@
 *** Settings ***
 Resource            ./settings.robot
 Suite Teardown      Close Browser   ALL
-Force Tags          ARTICLES
+Force Tags          ARTICLES   GUI_TEST
 
 *** Variables ***
-${email_id}             candidatex@gmail.com
-${password}             qa-is-cool
 ${art_title}            Test
 ${art_description}      test
 ${art_body}             Test Article
@@ -19,8 +17,8 @@ Create New Article
     And Validate Title In Home Page
     When Open Sign In Page
     Then Validate Login Url
-    And Enter Sign In Email Id   ${email_id}
-    And Enter Sign In Password   ${password}
+    And Enter Sign In Email Id   ${login_emailId}
+    And Enter Sign In Password   ${login_pwd}
     Then Click Sign In Button
     And Verify Signed In
     When Click On New Article Text
@@ -42,8 +40,8 @@ Update Existing Article
     And Validate Title In Home Page
     When Open Sign In Page
     Then Validate Login Url
-    And Enter Sign In Email Id   ${email_id}
-    And Enter Sign In Password   ${password}
+    And Enter Sign In Email Id   ${login_emailId}
+    And Enter Sign In Password   ${login_pwd}
     Then Click Sign In Button
     And Verify Signed In
     Then Open User Profile
@@ -64,8 +62,8 @@ Delete Existing Article
     And Validate Title In Home Page
     When Open Sign In Page
     Then Validate Login Url
-    And Enter Sign In Email Id   ${email_id}
-    And Enter Sign In Password   ${password}
+    And Enter Sign In Email Id   ${login_emailId}
+    And Enter Sign In Password   ${login_pwd}
     Then Click Sign In Button
     And Verify Signed In
     Then Open User Profile
@@ -87,8 +85,8 @@ Delete Article Button Not Shown To Other Author
     And Validate Title In Home Page
     When Open Sign In Page
     Then Validate Login Url
-    And Enter Sign In Email Id   ${email_id}
-    And Enter Sign In Password   ${password}
+    And Enter Sign In Email Id   ${login_emailId}
+    And Enter Sign In Password   ${login_pwd}
     Then Click Sign In Button
     And Verify Signed In
     And Get Signed In User Name

@@ -1,7 +1,7 @@
 *** Settings ***
 Resource            ./settings.robot
 Suite Teardown      Close Browser   ALL
-Force Tags          HOME_PAGE
+Force Tags          HOME_PAGE   GUI_TEST
 
 *** Test Cases ***
 Validate Home Page

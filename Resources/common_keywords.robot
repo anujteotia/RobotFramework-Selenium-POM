@@ -18,3 +18,10 @@ Take ScreenShot On Failure
     ${time_stamp}   Get Current Date   exclude_millis=True
     ${test_name}   Replace String Using Regexp  ${TEST NAME}   \\s   -
     Take Screenshot   filename=${OUTPUTDIR}/Screenshots/${test_name}-${time_stamp}.png
+
+Set Suite Variables
+    [Documentation]   This keyword will set suite variables
+    ${login_username}   Generate Random String    12    [LOWER]
+    Set Suite Variable   ${LOGIN_USERNAME}   ${login_username}
+    ${login_emailId}   Catenate   SEPARATOR=   ${login_username}   @gmail.com
+    Set Suite Variable   ${LOGIN_EMAILID}   ${login_emailId}
