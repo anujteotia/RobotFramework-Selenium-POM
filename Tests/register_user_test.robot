@@ -1,10 +1,11 @@
 *** Settings ***
-Resource        ./settings.robot
-Force Tags      REGISTER_USER
+Resource            ./settings.robot
+Suite Teardown      Close Browser   ALL
+Force Tags          REGISTER_USER
 
 *** Variables ***
-${username}   newuser1
-${email_id}   newuser1@gmail.com
+${username}   newuser12
+${email_id}   newuser12@gmail.com
 ${password}   qa-is-cool
 
 *** Test Cases ***

@@ -1,6 +1,7 @@
 *** Settings ***
-Resource        ./settings.robot
-Force Tags      ARTICLES
+Resource            ./settings.robot
+Suite Teardown      Close Browser   ALL
+Force Tags          ARTICLES
 
 *** Variables ***
 ${email_id}             candidatex@gmail.com
@@ -71,10 +72,29 @@ Delete Existing Article
     And Get Logged In User Name
     And Validate User Profile Url
     Then Open My Posts
-    Check Count Of Articles
+    And Check Count Of Articles
     And Read First Article From User Profile
     And Verify Created Article Url   ${art_title}
     Then Verify Delete Article Button
     And Click On Delete Article Button
     Then Open User Profile
     And Check Number Of Articles After Deletion
+
+Delete Article Button Not Shown To Other Author
+    [Documentation]   This test case checks Delete Article button shown to article's author
+    [Tags]   TESTING
+    Given I Open '${site_url}' in '${browser}' Browser
+    And Validate Title In Home Page
+    When Open Sign In Page
+    Then Validate Login Url
+    And Enter Sign In Email Id   ${email_id}
+    And Enter Sign In Password   ${password}
+    Then Click Sign In Button
+    And Verify Signed In
+    And Get Signed In User Name
+    Then Click On Global Feed
+    And Navigate To Other Author's Article
+    And Validate Delete Article Option Is Not Available
+
+
+

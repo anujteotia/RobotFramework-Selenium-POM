@@ -11,8 +11,6 @@ I Open '${url}' in '${browser}' Browser
     Set Browser Timeout    ${browser_timeout}
     Run Keyword If   ${record_video}   New Context   httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}   recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}
     ...   ELSE   New Context   httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}
-    #New Context   httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}
-    #New Context   httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}   recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}
     New Page   ${url}
 
 Take ScreenShot On Failure

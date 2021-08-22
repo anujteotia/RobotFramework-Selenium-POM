@@ -1,14 +1,14 @@
 *** Settings ***
 Resource            ./settings.robot
 Suite Teardown      Close Browser   ALL
-Force Tags          LOGIN_USER
+Force Tags          SETTINGS
 
 *** Variables ***
 ${email_id}   candidatex@gmail.com
 ${password}   qa-is-cool
 
 *** Test Cases ***
-Sign In For Registered User
+Validate Settings Page
     [Documentation]  This test case login using basic authentication and validates Home Page
     Given I Open '${site_url}' in '${browser}' Browser
     And Validate Title In Home Page
@@ -18,3 +18,6 @@ Sign In For Registered User
     And Enter Sign In Password   ${password}
     Then Click Sign In Button
     And Verify Signed In
+    Then Open Settings Page
+    And Validate Settings Page Url
+    And Validate Settings Title

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1 (Python 3.8.5 on darwin)" generated="20210821 22:17:34.224" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1 (Python 3.8.5 on darwin)" generated="20210822 12:42:43.153" rpa="false" schemaversion="2">
 <suite id="s1" name="Tests" source="/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Tests">
 <suite id="s1-s1" name="Article Test" source="/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Tests/article_test.robot">
 <test id="s1-s1-t1" name="Create New Article">
@@ -13,17 +13,17 @@
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20210821 22:17:35.831" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/3afc5aa5-b289-4649-a163-536aab6cab43"}</msg>
-<msg timestamp="20210821 22:17:36.740" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/3afc5aa5-b289-4649-a163-536aab6cab43"}</msg>
-<status status="PASS" starttime="20210821 22:17:35.830" endtime="20210821 22:17:36.741"/>
+<msg timestamp="20210822 12:42:44.351" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/877f73a0-1897-45e2-be63-d635fd570387"}</msg>
+<msg timestamp="20210822 12:42:45.025" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/877f73a0-1897-45e2-be63-d635fd570387"}</msg>
+<status status="PASS" starttime="20210822 12:42:44.350" endtime="20210822 12:42:45.026"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${browser_timeout}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20210821 22:17:36.753" level="INFO">No context open.</msg>
-<status status="PASS" starttime="20210821 22:17:36.741" endtime="20210821 22:17:36.753"/>
+<msg timestamp="20210822 12:42:45.035" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210822 12:42:45.026" endtime="20210822 12:42:45.035"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${record_video}</arg>
@@ -36,16 +36,15 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="New Context" library="Browser">
 <arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
-<arg>recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20210821 22:17:36.760" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false, "recordVideo": {"size": {"width": 1280, "height": 720}, "dir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos"}}</msg>
-<msg timestamp="20210821 22:17:36.866" level="INFO">Successfully created context. </msg>
-<msg timestamp="20210821 22:17:36.866" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False, 'recordVideo': {'size': {'width': 1280, 'height': 720}, 'dir': '/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos'}}</msg>
-<status status="PASS" starttime="20210821 22:17:36.756" endtime="20210821 22:17:36.866"/>
+<msg timestamp="20210822 12:42:45.039" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210822 12:42:45.125" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210822 12:42:45.125" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210822 12:42:45.037" endtime="20210822 12:42:45.125"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:36.753" endtime="20210821 22:17:36.867"/>
+<status status="PASS" starttime="20210822 12:42:45.036" endtime="20210822 12:42:45.125"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${url}</arg>
@@ -54,11 +53,10 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20210821 22:17:40.403" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
-<msg timestamp="20210821 22:17:40.406" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;video width="1280" height="720" controls&gt;&lt;source src="Videos/8b18957df398e5fd6a12b934d8c14015.webm" type="video/webm"&gt;&lt;/video&gt;</msg>
-<status status="PASS" starttime="20210821 22:17:36.867" endtime="20210821 22:17:40.407"/>
+<msg timestamp="20210822 12:42:48.381" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210822 12:42:45.126" endtime="20210822 12:42:48.382"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:35.829" endtime="20210821 22:17:40.407"/>
+<status status="PASS" starttime="20210822 12:42:44.349" endtime="20210822 12:42:48.382"/>
 </kw>
 <kw name="And Validate Title In Home Page" library="home_page_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -72,27 +70,36 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:40.487" level="INFO">${title} = conduit</msg>
-<status status="PASS" starttime="20210821 22:17:40.409" endtime="20210821 22:17:40.487"/>
+<msg timestamp="20210822 12:42:48.440" level="INFO">${title} = conduit</msg>
+<status status="PASS" starttime="20210822 12:42:48.384" endtime="20210822 12:42:48.440"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:17:40.487" level="INFO">conduit</msg>
-<status status="PASS" starttime="20210821 22:17:40.487" endtime="20210821 22:17:40.488"/>
+<msg timestamp="20210822 12:42:48.441" level="INFO">conduit</msg>
+<status status="PASS" starttime="20210822 12:42:48.441" endtime="20210822 12:42:48.441"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:40.408" endtime="20210821 22:17:40.488"/>
+<status status="PASS" starttime="20210822 12:42:48.383" endtime="20210822 12:42:48.441"/>
 </kw>
 <kw name="When Open Sign In Page" library="home_page_keywords">
 <doc>This keyword will click on sign In link in conduit home page</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${sign_in_link}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:42:48.459" level="INFO">Wait for Element with selector: //a[contains(text(),'Sign in')]</msg>
+<status status="PASS" starttime="20210822 12:42:48.442" endtime="20210822 12:42:48.459"/>
+</kw>
 <kw name="Click" library="Browser">
 <arg>selector=${sign_in_link}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:17:40.489" endtime="20210821 22:17:41.638"/>
+<status status="PASS" starttime="20210822 12:42:48.459" endtime="20210822 12:42:49.550"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:40.488" endtime="20210821 22:17:41.638"/>
+<status status="PASS" starttime="20210822 12:42:48.442" endtime="20210822 12:42:49.551"/>
 </kw>
 <kw name="Then Validate Login Url" library="login_user_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -105,17 +112,17 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<msg timestamp="20210821 22:17:41.645" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
-<status status="PASS" starttime="20210821 22:17:41.640" endtime="20210821 22:17:41.645"/>
+<msg timestamp="20210822 12:42:49.555" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:42:49.552" endtime="20210822 12:42:49.555"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${login_url}</arg>
 <arg>${login_url}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20210821 22:17:41.646" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
-<status status="PASS" starttime="20210821 22:17:41.645" endtime="20210821 22:17:41.646"/>
+<msg timestamp="20210822 12:42:49.556" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:42:49.555" endtime="20210822 12:42:49.556"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:41.639" endtime="20210821 22:17:41.646"/>
+<status status="PASS" starttime="20210822 12:42:49.551" endtime="20210822 12:42:49.556"/>
 </kw>
 <kw name="And Enter Sign In Email Id" library="login_user_keywords">
 <arg>${email_id}</arg>
@@ -126,10 +133,10 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:41.648" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:17:41.648" endtime="20210821 22:17:42.700"/>
+<msg timestamp="20210822 12:42:49.558" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:42:49.557" endtime="20210822 12:42:50.600"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:41.647" endtime="20210821 22:17:42.701"/>
+<status status="PASS" starttime="20210822 12:42:49.557" endtime="20210822 12:42:50.601"/>
 </kw>
 <kw name="And Enter Sign In Password" library="login_user_keywords">
 <arg>${password}</arg>
@@ -141,9 +148,9 @@ Returns a stable identifier for the created page.</doc>
 <tag>Setter</tag>
 <doc>Fills the given secret from ``variable_name`` into the
 text field found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:17:42.703" endtime="20210821 22:17:43.769"/>
+<status status="PASS" starttime="20210822 12:42:50.603" endtime="20210822 12:42:51.641"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:42.702" endtime="20210821 22:17:43.769"/>
+<status status="PASS" starttime="20210822 12:42:50.602" endtime="20210822 12:42:51.641"/>
 </kw>
 <kw name="Then Click Sign In Button" library="login_user_keywords">
 <doc>This keyword clicks on the sign in button</doc>
@@ -152,9 +159,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:17:43.771" endtime="20210821 22:17:44.899"/>
+<status status="PASS" starttime="20210822 12:42:51.642" endtime="20210822 12:42:52.697"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:43.770" endtime="20210821 22:17:44.899"/>
+<status status="PASS" starttime="20210822 12:42:51.642" endtime="20210822 12:42:52.697"/>
 </kw>
 <kw name="And Verify Signed In" library="login_user_keywords">
 <doc>This keyword verifies whether sign in is successfull or not</doc>
@@ -166,7 +173,7 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20210821 22:17:44.900" endtime="20210821 22:17:44.903"/>
+<status status="PASS" starttime="20210822 12:42:52.699" endtime="20210822 12:42:52.702"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>selector=${new_article_txt}</arg>
@@ -174,8 +181,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:17:44.927" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
-<status status="PASS" starttime="20210821 22:17:44.903" endtime="20210821 22:17:44.928"/>
+<msg timestamp="20210822 12:42:52.722" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
+<status status="PASS" starttime="20210822 12:42:52.703" endtime="20210822 12:42:52.723"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${art_txt}</var>
@@ -187,10 +194,10 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:44.959" level="INFO">${art_txt} =  New Article</msg>
-<status status="PASS" starttime="20210821 22:17:44.928" endtime="20210821 22:17:44.959"/>
+<msg timestamp="20210822 12:42:52.752" level="INFO">${art_txt} =  New Article</msg>
+<status status="PASS" starttime="20210822 12:42:52.723" endtime="20210822 12:42:52.752"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:44.899" endtime="20210821 22:17:44.960"/>
+<status status="PASS" starttime="20210822 12:42:52.698" endtime="20210822 12:42:52.752"/>
 </kw>
 <kw name="When Click On New Article Text" library="articles_keywords">
 <doc>This keyword clicks on new article link in signed in page</doc>
@@ -199,9 +206,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:17:44.961" endtime="20210821 22:17:46.036"/>
+<status status="PASS" starttime="20210822 12:42:52.753" endtime="20210822 12:42:53.827"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:44.960" endtime="20210821 22:17:46.036"/>
+<status status="PASS" starttime="20210822 12:42:52.753" endtime="20210822 12:42:53.827"/>
 </kw>
 <kw name="And Validate New Article Page" library="articles_keywords">
 <doc>This keyword verifies that page to create new article is open</doc>
@@ -213,7 +220,7 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20210821 22:17:46.038" endtime="20210821 22:17:46.043"/>
+<status status="PASS" starttime="20210822 12:42:53.829" endtime="20210822 12:42:53.834"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>selector=${publish_article_txt}</arg>
@@ -221,10 +228,10 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:17:46.059" level="INFO">Wait for Element with selector: //button[contains(text(),'Publish Article')]</msg>
-<status status="PASS" starttime="20210821 22:17:46.043" endtime="20210821 22:17:46.060"/>
+<msg timestamp="20210822 12:42:53.849" level="INFO">Wait for Element with selector: //button[contains(text(),'Publish Article')]</msg>
+<status status="PASS" starttime="20210822 12:42:53.834" endtime="20210822 12:42:53.850"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:46.037" endtime="20210821 22:17:46.060"/>
+<status status="PASS" starttime="20210822 12:42:53.828" endtime="20210822 12:42:53.850"/>
 </kw>
 <kw name="Then Enter Article Title" library="articles_keywords">
 <arg>${art_title}</arg>
@@ -235,10 +242,10 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:46.063" level="INFO">Fills the text 'Test' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:17:46.062" endtime="20210821 22:17:47.107"/>
+<msg timestamp="20210822 12:42:53.852" level="INFO">Fills the text 'Test' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:42:53.851" endtime="20210822 12:42:54.887"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:46.061" endtime="20210821 22:17:47.108"/>
+<status status="PASS" starttime="20210822 12:42:53.850" endtime="20210822 12:42:54.887"/>
 </kw>
 <kw name="And Enter Article Description" library="articles_keywords">
 <arg>${art_description}</arg>
@@ -249,10 +256,10 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:47.112" level="INFO">Fills the text 'test' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:17:47.111" endtime="20210821 22:17:48.181"/>
+<msg timestamp="20210822 12:42:54.891" level="INFO">Fills the text 'test' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:42:54.889" endtime="20210822 12:42:55.935"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:47.109" endtime="20210821 22:17:48.182"/>
+<status status="PASS" starttime="20210822 12:42:54.888" endtime="20210822 12:42:55.936"/>
 </kw>
 <kw name="And Write Article Body" library="articles_keywords">
 <arg>${art_body}</arg>
@@ -263,10 +270,10 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:48.184" level="INFO">Fills the text 'Test Article' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:17:48.183" endtime="20210821 22:17:49.254"/>
+<msg timestamp="20210822 12:42:55.939" level="INFO">Fills the text 'Test Article' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:42:55.939" endtime="20210822 12:42:56.978"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:48.182" endtime="20210821 22:17:49.254"/>
+<status status="PASS" starttime="20210822 12:42:55.937" endtime="20210822 12:42:56.978"/>
 </kw>
 <kw name="And Enter Article Tag" library="articles_keywords">
 <arg>${art_tag}</arg>
@@ -277,8 +284,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:49.257" level="INFO">Fills the text 'CRUD' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:17:49.256" endtime="20210821 22:17:50.301"/>
+<msg timestamp="20210822 12:42:56.981" level="INFO">Fills the text 'CRUD' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:42:56.980" endtime="20210822 12:42:58.022"/>
 </kw>
 <kw name="Keyboard Key" library="Browser">
 <arg>press</arg>
@@ -286,9 +293,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
-<status status="PASS" starttime="20210821 22:17:50.302" endtime="20210821 22:17:51.326"/>
+<status status="PASS" starttime="20210822 12:42:58.022" endtime="20210822 12:42:59.035"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:49.255" endtime="20210821 22:17:51.326"/>
+<status status="PASS" starttime="20210822 12:42:56.979" endtime="20210822 12:42:59.035"/>
 </kw>
 <kw name="Then Click Publish Article Button" library="articles_keywords">
 <doc>This keyword clicks on the publish article button</doc>
@@ -297,9 +304,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:17:51.328" endtime="20210821 22:17:52.395"/>
+<status status="PASS" starttime="20210822 12:42:59.037" endtime="20210822 12:43:00.094"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:51.327" endtime="20210821 22:17:52.395"/>
+<status status="PASS" starttime="20210822 12:42:59.036" endtime="20210822 12:43:00.095"/>
 </kw>
 <kw name="And Verify Created Article Url" library="articles_keywords">
 <arg>${art_title}</arg>
@@ -308,8 +315,8 @@ text field found by ``selector``.</doc>
 <var>${article_title}</var>
 <arg>${article_title}</arg>
 <doc>Converts string to lower case.</doc>
-<msg timestamp="20210821 22:17:52.399" level="INFO">${article_title} = test</msg>
-<status status="PASS" starttime="20210821 22:17:52.398" endtime="20210821 22:17:52.399"/>
+<msg timestamp="20210822 12:43:00.097" level="INFO">${article_title} = test</msg>
+<status status="PASS" starttime="20210822 12:43:00.097" endtime="20210822 12:43:00.097"/>
 </kw>
 <kw name="Get Url" library="Browser">
 <arg>assertion_operator=contains</arg>
@@ -319,9 +326,9 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20210821 22:17:52.399" endtime="20210821 22:17:52.403"/>
+<status status="PASS" starttime="20210822 12:43:00.098" endtime="20210822 12:43:00.101"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:52.396" endtime="20210821 22:17:52.403"/>
+<status status="PASS" starttime="20210822 12:43:00.096" endtime="20210822 12:43:00.102"/>
 </kw>
 <kw name="And Verify Edit Article Button" library="articles_keywords">
 <doc>This keyword validates the presence of Edit Article button</doc>
@@ -331,8 +338,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:17:52.430" level="INFO">Wait for Element with selector: (//a[contains(@class,'btn btn-sm')])[2]</msg>
-<status status="PASS" starttime="20210821 22:17:52.405" endtime="20210821 22:17:52.431"/>
+<msg timestamp="20210822 12:43:00.117" level="INFO">Wait for Element with selector: (//a[contains(@class,'btn btn-sm')])[2]</msg>
+<status status="PASS" starttime="20210822 12:43:00.103" endtime="20210822 12:43:00.117"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${edit_article}</var>
@@ -344,10 +351,10 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:52.455" level="INFO">${edit_article} =  Edit Article</msg>
-<status status="PASS" starttime="20210821 22:17:52.431" endtime="20210821 22:17:52.455"/>
+<msg timestamp="20210822 12:43:00.152" level="INFO">${edit_article} =  Edit Article</msg>
+<status status="PASS" starttime="20210822 12:43:00.117" endtime="20210822 12:43:00.152"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:52.404" endtime="20210821 22:17:52.455"/>
+<status status="PASS" starttime="20210822 12:43:00.102" endtime="20210822 12:43:00.152"/>
 </kw>
 <kw name="And Verify Delete Article Button" library="articles_keywords">
 <doc>This keyword validates the presence of Delete Article button</doc>
@@ -357,8 +364,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:17:52.471" level="INFO">Wait for Element with selector: (//button[contains(text(),'Delete Article')])[2]</msg>
-<status status="PASS" starttime="20210821 22:17:52.456" endtime="20210821 22:17:52.471"/>
+<msg timestamp="20210822 12:43:00.165" level="INFO">Wait for Element with selector: (//button[contains(text(),'Delete Article')])[2]</msg>
+<status status="PASS" starttime="20210822 12:43:00.153" endtime="20210822 12:43:00.165"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${delete_article}</var>
@@ -370,10 +377,10 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:52.492" level="INFO">${delete_article} =  Delete Article</msg>
-<status status="PASS" starttime="20210821 22:17:52.471" endtime="20210821 22:17:52.492"/>
+<msg timestamp="20210822 12:43:00.189" level="INFO">${delete_article} =  Delete Article</msg>
+<status status="PASS" starttime="20210822 12:43:00.165" endtime="20210822 12:43:00.189"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:52.455" endtime="20210821 22:17:52.493"/>
+<status status="PASS" starttime="20210822 12:43:00.152" endtime="20210822 12:43:00.189"/>
 </kw>
 <kw name="And Verify Comment Text Box" library="articles_keywords">
 <doc>This keyword validates the presence of comment text box</doc>
@@ -383,10 +390,10 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:17:52.505" level="INFO">Wait for Element with selector: //textarea[contains(@class,'form-control')]</msg>
-<status status="PASS" starttime="20210821 22:17:52.493" endtime="20210821 22:17:52.506"/>
+<msg timestamp="20210822 12:43:00.203" level="INFO">Wait for Element with selector: //textarea[contains(@class,'form-control')]</msg>
+<status status="PASS" starttime="20210822 12:43:00.190" endtime="20210822 12:43:00.203"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:52.493" endtime="20210821 22:17:52.506"/>
+<status status="PASS" starttime="20210822 12:43:00.189" endtime="20210822 12:43:00.203"/>
 </kw>
 <kw name="And Verify Post Comment Button" library="articles_keywords">
 <doc>This keyword validates the presence of post comment button</doc>
@@ -396,8 +403,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:17:52.520" level="INFO">Wait for Element with selector: //button[contains(text(),'Post Comment')]</msg>
-<status status="PASS" starttime="20210821 22:17:52.507" endtime="20210821 22:17:52.520"/>
+<msg timestamp="20210822 12:43:00.215" level="INFO">Wait for Element with selector: //button[contains(text(),'Post Comment')]</msg>
+<status status="PASS" starttime="20210822 12:43:00.204" endtime="20210822 12:43:00.216"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${post_comment}</var>
@@ -409,15 +416,15 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:52.544" level="INFO">${post_comment} = Post Comment</msg>
-<status status="PASS" starttime="20210821 22:17:52.520" endtime="20210821 22:17:52.544"/>
+<msg timestamp="20210822 12:43:00.245" level="INFO">${post_comment} = Post Comment</msg>
+<status status="PASS" starttime="20210822 12:43:00.216" endtime="20210822 12:43:00.245"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:52.506" endtime="20210821 22:17:52.544"/>
+<status status="PASS" starttime="20210822 12:43:00.203" endtime="20210822 12:43:00.246"/>
 </kw>
 <doc>This test case login using basic authentication,validates Home Page and create &amp; validates creation of new article</doc>
 <tag>ARTICLES</tag>
 <tag>FEATURE-ARTICLES</tag>
-<status status="PASS" starttime="20210821 22:17:35.825" endtime="20210821 22:17:52.544"/>
+<status status="PASS" starttime="20210822 12:42:44.346" endtime="20210822 12:43:00.246"/>
 </test>
 <test id="s1-s1-t2" name="Update Existing Article">
 <kw name="Given I Open '${site_url}' in '${browser}' Browser" library="common_keywords" sourcename="I Open '${url}' in '${browser}' Browser">
@@ -430,17 +437,17 @@ text field found by ``selector``.</doc>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20210821 22:17:53.103" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/a202c80a-73c0-4029-bb8d-0dc3b23d8ce6"}</msg>
-<msg timestamp="20210821 22:17:53.700" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/a202c80a-73c0-4029-bb8d-0dc3b23d8ce6"}</msg>
-<status status="PASS" starttime="20210821 22:17:53.102" endtime="20210821 22:17:53.701"/>
+<msg timestamp="20210822 12:43:00.340" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/50f23217-a09b-471b-b8c0-911b020ee13f"}</msg>
+<msg timestamp="20210822 12:43:00.945" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/50f23217-a09b-471b-b8c0-911b020ee13f"}</msg>
+<status status="PASS" starttime="20210822 12:43:00.338" endtime="20210822 12:43:00.945"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${browser_timeout}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20210821 22:17:53.705" level="INFO">No context open.</msg>
-<status status="PASS" starttime="20210821 22:17:53.701" endtime="20210821 22:17:53.705"/>
+<msg timestamp="20210822 12:43:00.955" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210822 12:43:00.946" endtime="20210822 12:43:00.955"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${record_video}</arg>
@@ -453,16 +460,15 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="New Context" library="Browser">
 <arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
-<arg>recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20210821 22:17:53.732" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false, "recordVideo": {"size": {"width": 1280, "height": 720}, "dir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos"}}</msg>
-<msg timestamp="20210821 22:17:53.804" level="INFO">Successfully created context. </msg>
-<msg timestamp="20210821 22:17:53.804" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False, 'recordVideo': {'size': {'width': 1280, 'height': 720}, 'dir': '/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos'}}</msg>
-<status status="PASS" starttime="20210821 22:17:53.706" endtime="20210821 22:17:53.804"/>
+<msg timestamp="20210822 12:43:00.958" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210822 12:43:01.085" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210822 12:43:01.085" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210822 12:43:00.956" endtime="20210822 12:43:01.085"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:53.705" endtime="20210821 22:17:53.805"/>
+<status status="PASS" starttime="20210822 12:43:00.956" endtime="20210822 12:43:01.086"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${url}</arg>
@@ -471,11 +477,10 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20210821 22:17:56.787" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
-<msg timestamp="20210821 22:17:56.788" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;video width="1280" height="720" controls&gt;&lt;source src="Videos/41914f55ef0c36d52c25fa8a22153a07.webm" type="video/webm"&gt;&lt;/video&gt;</msg>
-<status status="PASS" starttime="20210821 22:17:53.805" endtime="20210821 22:17:56.788"/>
+<msg timestamp="20210822 12:43:04.293" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210822 12:43:01.086" endtime="20210822 12:43:04.294"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:53.102" endtime="20210821 22:17:56.789"/>
+<status status="PASS" starttime="20210822 12:43:00.337" endtime="20210822 12:43:04.294"/>
 </kw>
 <kw name="And Validate Title In Home Page" library="home_page_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -489,27 +494,36 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:56.834" level="INFO">${title} = conduit</msg>
-<status status="PASS" starttime="20210821 22:17:56.790" endtime="20210821 22:17:56.834"/>
+<msg timestamp="20210822 12:43:04.343" level="INFO">${title} = conduit</msg>
+<status status="PASS" starttime="20210822 12:43:04.296" endtime="20210822 12:43:04.343"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:17:56.835" level="INFO">conduit</msg>
-<status status="PASS" starttime="20210821 22:17:56.834" endtime="20210821 22:17:56.835"/>
+<msg timestamp="20210822 12:43:04.344" level="INFO">conduit</msg>
+<status status="PASS" starttime="20210822 12:43:04.344" endtime="20210822 12:43:04.344"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:56.789" endtime="20210821 22:17:56.835"/>
+<status status="PASS" starttime="20210822 12:43:04.295" endtime="20210822 12:43:04.344"/>
 </kw>
 <kw name="When Open Sign In Page" library="home_page_keywords">
 <doc>This keyword will click on sign In link in conduit home page</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${sign_in_link}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:43:04.362" level="INFO">Wait for Element with selector: //a[contains(text(),'Sign in')]</msg>
+<status status="PASS" starttime="20210822 12:43:04.345" endtime="20210822 12:43:04.362"/>
+</kw>
 <kw name="Click" library="Browser">
 <arg>selector=${sign_in_link}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:17:56.836" endtime="20210821 22:17:57.936"/>
+<status status="PASS" starttime="20210822 12:43:04.362" endtime="20210822 12:43:05.449"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:56.835" endtime="20210821 22:17:57.936"/>
+<status status="PASS" starttime="20210822 12:43:04.344" endtime="20210822 12:43:05.450"/>
 </kw>
 <kw name="Then Validate Login Url" library="login_user_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -522,17 +536,17 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<msg timestamp="20210821 22:17:57.940" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
-<status status="PASS" starttime="20210821 22:17:57.937" endtime="20210821 22:17:57.940"/>
+<msg timestamp="20210822 12:43:05.455" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:43:05.452" endtime="20210822 12:43:05.455"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${login_url}</arg>
 <arg>${login_url}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20210821 22:17:57.941" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
-<status status="PASS" starttime="20210821 22:17:57.940" endtime="20210821 22:17:57.941"/>
+<msg timestamp="20210822 12:43:05.456" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:43:05.455" endtime="20210822 12:43:05.456"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:57.936" endtime="20210821 22:17:57.941"/>
+<status status="PASS" starttime="20210822 12:43:05.451" endtime="20210822 12:43:05.456"/>
 </kw>
 <kw name="And Enter Sign In Email Id" library="login_user_keywords">
 <arg>${email_id}</arg>
@@ -543,10 +557,10 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:17:57.943" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:17:57.942" endtime="20210821 22:17:58.980"/>
+<msg timestamp="20210822 12:43:05.458" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:43:05.457" endtime="20210822 12:43:06.482"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:57.942" endtime="20210821 22:17:58.980"/>
+<status status="PASS" starttime="20210822 12:43:05.456" endtime="20210822 12:43:06.482"/>
 </kw>
 <kw name="And Enter Sign In Password" library="login_user_keywords">
 <arg>${password}</arg>
@@ -558,9 +572,9 @@ Returns a stable identifier for the created page.</doc>
 <tag>Setter</tag>
 <doc>Fills the given secret from ``variable_name`` into the
 text field found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:17:58.983" endtime="20210821 22:18:00.031"/>
+<status status="PASS" starttime="20210822 12:43:06.483" endtime="20210822 12:43:07.518"/>
 </kw>
-<status status="PASS" starttime="20210821 22:17:58.981" endtime="20210821 22:18:00.031"/>
+<status status="PASS" starttime="20210822 12:43:06.482" endtime="20210822 12:43:07.519"/>
 </kw>
 <kw name="Then Click Sign In Button" library="login_user_keywords">
 <doc>This keyword clicks on the sign in button</doc>
@@ -569,9 +583,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:00.034" endtime="20210821 22:18:01.121"/>
+<status status="PASS" starttime="20210822 12:43:07.522" endtime="20210822 12:43:08.582"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:00.032" endtime="20210821 22:18:01.121"/>
+<status status="PASS" starttime="20210822 12:43:07.520" endtime="20210822 12:43:08.582"/>
 </kw>
 <kw name="And Verify Signed In" library="login_user_keywords">
 <doc>This keyword verifies whether sign in is successfull or not</doc>
@@ -583,7 +597,7 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20210821 22:18:01.122" endtime="20210821 22:18:01.124"/>
+<status status="PASS" starttime="20210822 12:43:08.584" endtime="20210822 12:43:08.588"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>selector=${new_article_txt}</arg>
@@ -591,8 +605,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:18:01.138" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
-<status status="PASS" starttime="20210821 22:18:01.125" endtime="20210821 22:18:01.138"/>
+<msg timestamp="20210822 12:43:08.602" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
+<status status="PASS" starttime="20210822 12:43:08.588" endtime="20210822 12:43:08.602"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${art_txt}</var>
@@ -604,10 +618,10 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:01.172" level="INFO">${art_txt} =  New Article</msg>
-<status status="PASS" starttime="20210821 22:18:01.138" endtime="20210821 22:18:01.172"/>
+<msg timestamp="20210822 12:43:08.626" level="INFO">${art_txt} =  New Article</msg>
+<status status="PASS" starttime="20210822 12:43:08.603" endtime="20210822 12:43:08.627"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:01.122" endtime="20210821 22:18:01.172"/>
+<status status="PASS" starttime="20210822 12:43:08.583" endtime="20210822 12:43:08.627"/>
 </kw>
 <kw name="Then Open User Profile" library="user_profile_keywords">
 <doc>This keyword open user profile</doc>
@@ -617,17 +631,17 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:18:01.191" level="INFO">Wait for Element with selector: (//a[@class='nav-link'])[3]</msg>
-<status status="PASS" starttime="20210821 22:18:01.174" endtime="20210821 22:18:01.191"/>
+<msg timestamp="20210822 12:43:08.640" level="INFO">Wait for Element with selector: (//a[@class='nav-link'])[3]</msg>
+<status status="PASS" starttime="20210822 12:43:08.628" endtime="20210822 12:43:08.640"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>selector=${username_txt_link}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:01.191" endtime="20210821 22:18:02.268"/>
+<status status="PASS" starttime="20210822 12:43:08.643" endtime="20210822 12:43:09.705"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:01.172" endtime="20210821 22:18:02.269"/>
+<status status="PASS" starttime="20210822 12:43:08.627" endtime="20210822 12:43:09.705"/>
 </kw>
 <kw name="And Get Logged In User Name" library="user_profile_keywords">
 <doc>This keyword fetches the name of the user</doc>
@@ -638,17 +652,17 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:02.296" level="INFO">${username} = candidatex1</msg>
-<status status="PASS" starttime="20210821 22:18:02.271" endtime="20210821 22:18:02.296"/>
+<msg timestamp="20210822 12:43:09.738" level="INFO">${username} = candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:09.707" endtime="20210822 12:43:09.738"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${username}</arg>
 <arg>${username}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20210821 22:18:02.296" level="INFO">${username} = candidatex1</msg>
-<status status="PASS" starttime="20210821 22:18:02.296" endtime="20210821 22:18:02.297"/>
+<msg timestamp="20210822 12:43:09.739" level="INFO">${username} = candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:09.738" endtime="20210822 12:43:09.739"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:02.270" endtime="20210821 22:18:02.297"/>
+<status status="PASS" starttime="20210822 12:43:09.706" endtime="20210822 12:43:09.739"/>
 </kw>
 <kw name="And Validate User Profile Url" library="user_profile_keywords">
 <doc>This keyword validates the user profile url</doc>
@@ -658,17 +672,17 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<msg timestamp="20210821 22:18:02.299" level="INFO">${url} = https://qa-task.backbasecloud.com/profile/candidatex1</msg>
-<status status="PASS" starttime="20210821 22:18:02.297" endtime="20210821 22:18:02.299"/>
+<msg timestamp="20210822 12:43:09.742" level="INFO">${url} = https://qa-task.backbasecloud.com/profile/candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:09.740" endtime="20210822 12:43:09.742"/>
 </kw>
 <kw name="Should End With" library="BuiltIn">
 <arg>${url}</arg>
 <arg>profile/${username}</arg>
 <arg>message=User profile url is not navigated properly.</arg>
 <doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
-<status status="PASS" starttime="20210821 22:18:02.300" endtime="20210821 22:18:02.300"/>
+<status status="PASS" starttime="20210822 12:43:09.742" endtime="20210822 12:43:09.743"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:02.297" endtime="20210821 22:18:02.300"/>
+<status status="PASS" starttime="20210822 12:43:09.739" endtime="20210822 12:43:09.743"/>
 </kw>
 <kw name="Then Open My Posts" library="user_profile_keywords">
 <doc>This Keyword Ensures thet My posts are open</doc>
@@ -677,9 +691,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:02.301" endtime="20210821 22:18:03.338"/>
+<status status="PASS" starttime="20210822 12:43:09.744" endtime="20210822 12:43:10.796"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:02.301" endtime="20210821 22:18:03.338"/>
+<status status="PASS" starttime="20210822 12:43:09.743" endtime="20210822 12:43:10.796"/>
 </kw>
 <kw name="And Read First Article From User Profile" library="articles_keywords">
 <doc>This keyword Open first existing article</doc>
@@ -690,17 +704,17 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:03.373" level="INFO">${art_title} = Test</msg>
-<status status="PASS" starttime="20210821 22:18:03.340" endtime="20210821 22:18:03.373"/>
+<msg timestamp="20210822 12:43:10.823" level="INFO">${art_title} = Test</msg>
+<status status="PASS" starttime="20210822 12:43:10.798" endtime="20210822 12:43:10.823"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>selector=${first_art_read_more_txt}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:03.374" endtime="20210821 22:18:04.423"/>
+<status status="PASS" starttime="20210822 12:43:10.823" endtime="20210822 12:43:11.864"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:03.339" endtime="20210821 22:18:04.424"/>
+<status status="PASS" starttime="20210822 12:43:10.797" endtime="20210822 12:43:11.865"/>
 </kw>
 <kw name="And Verify Created Article Url" library="articles_keywords">
 <arg>${art_title}</arg>
@@ -709,8 +723,8 @@ text field found by ``selector``.</doc>
 <var>${article_title}</var>
 <arg>${article_title}</arg>
 <doc>Converts string to lower case.</doc>
-<msg timestamp="20210821 22:18:04.427" level="INFO">${article_title} = test</msg>
-<status status="PASS" starttime="20210821 22:18:04.426" endtime="20210821 22:18:04.427"/>
+<msg timestamp="20210822 12:43:11.867" level="INFO">${article_title} = test</msg>
+<status status="PASS" starttime="20210822 12:43:11.867" endtime="20210822 12:43:11.867"/>
 </kw>
 <kw name="Get Url" library="Browser">
 <arg>assertion_operator=contains</arg>
@@ -720,9 +734,9 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20210821 22:18:04.427" endtime="20210821 22:18:04.431"/>
+<status status="PASS" starttime="20210822 12:43:11.868" endtime="20210822 12:43:11.871"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:04.425" endtime="20210821 22:18:04.431"/>
+<status status="PASS" starttime="20210822 12:43:11.865" endtime="20210822 12:43:11.871"/>
 </kw>
 <kw name="Then And Verify Edit Article Button" library="articles_keywords">
 <doc>This keyword validates the presence of Edit Article button</doc>
@@ -732,8 +746,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:18:04.450" level="INFO">Wait for Element with selector: (//a[contains(@class,'btn btn-sm')])[2]</msg>
-<status status="PASS" starttime="20210821 22:18:04.433" endtime="20210821 22:18:04.450"/>
+<msg timestamp="20210822 12:43:11.885" level="INFO">Wait for Element with selector: (//a[contains(@class,'btn btn-sm')])[2]</msg>
+<status status="PASS" starttime="20210822 12:43:11.873" endtime="20210822 12:43:11.886"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${edit_article}</var>
@@ -745,10 +759,10 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:04.473" level="INFO">${edit_article} =  Edit Article</msg>
-<status status="PASS" starttime="20210821 22:18:04.451" endtime="20210821 22:18:04.473"/>
+<msg timestamp="20210822 12:43:11.910" level="INFO">${edit_article} =  Edit Article</msg>
+<status status="PASS" starttime="20210822 12:43:11.886" endtime="20210822 12:43:11.910"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:04.432" endtime="20210821 22:18:04.473"/>
+<status status="PASS" starttime="20210822 12:43:11.872" endtime="20210822 12:43:11.910"/>
 </kw>
 <kw name="And Click On Edit Article Button" library="articles_keywords">
 <doc>This keywor clicks on Edit Article Button</doc>
@@ -757,9 +771,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:04.475" endtime="20210821 22:18:05.513"/>
+<status status="PASS" starttime="20210822 12:43:11.911" endtime="20210822 12:43:12.948"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:04.474" endtime="20210821 22:18:05.513"/>
+<status status="PASS" starttime="20210822 12:43:11.910" endtime="20210822 12:43:12.949"/>
 </kw>
 <kw name="Then Verify Edit Article Url" library="articles_keywords">
 <arg>${art_title}</arg>
@@ -768,8 +782,8 @@ text field found by ``selector``.</doc>
 <var>${article_title}</var>
 <arg>${article_title}</arg>
 <doc>Converts string to lower case.</doc>
-<msg timestamp="20210821 22:18:05.517" level="INFO">${article_title} = test</msg>
-<status status="PASS" starttime="20210821 22:18:05.516" endtime="20210821 22:18:05.517"/>
+<msg timestamp="20210822 12:43:12.951" level="INFO">${article_title} = test</msg>
+<status status="PASS" starttime="20210822 12:43:12.950" endtime="20210822 12:43:12.951"/>
 </kw>
 <kw name="Get Url" library="Browser">
 <arg>assertion_operator=contains</arg>
@@ -779,9 +793,9 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20210821 22:18:05.518" endtime="20210821 22:18:05.522"/>
+<status status="PASS" starttime="20210822 12:43:12.952" endtime="20210822 12:43:12.955"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:05.514" endtime="20210821 22:18:05.523"/>
+<status status="PASS" starttime="20210822 12:43:12.949" endtime="20210822 12:43:12.955"/>
 </kw>
 <kw name="And Update Article Body" library="articles_keywords">
 <arg>${updated_txt}</arg>
@@ -791,7 +805,7 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears the text field found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:05.525" endtime="20210821 22:18:06.570"/>
+<status status="PASS" starttime="20210822 12:43:12.956" endtime="20210822 12:43:13.997"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>selector=${article_body_txt_box}</arg>
@@ -799,8 +813,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:06.571" level="INFO">Fills the text 'Test Article updated' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:18:06.570" endtime="20210821 22:18:07.609"/>
+<msg timestamp="20210822 12:43:13.999" level="INFO">Fills the text 'Test Article updated' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:43:13.998" endtime="20210822 12:43:15.027"/>
 </kw>
 <kw name="Click Publish Article Button" library="articles_keywords">
 <doc>This keyword clicks on the publish article button</doc>
@@ -809,11 +823,11 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:07.611" endtime="20210821 22:18:08.687"/>
+<status status="PASS" starttime="20210822 12:43:15.028" endtime="20210822 12:43:16.091"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:07.610" endtime="20210821 22:18:08.688"/>
+<status status="PASS" starttime="20210822 12:43:15.027" endtime="20210822 12:43:16.092"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:05.523" endtime="20210821 22:18:08.688"/>
+<status status="PASS" starttime="20210822 12:43:12.955" endtime="20210822 12:43:16.092"/>
 </kw>
 <kw name="And Validate Updated Article" library="articles_keywords">
 <arg>${updated_txt}</arg>
@@ -827,14 +841,14 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:08.690" endtime="20210821 22:18:08.721"/>
+<status status="PASS" starttime="20210822 12:43:16.094" endtime="20210822 12:43:16.121"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:08.689" endtime="20210821 22:18:08.721"/>
+<status status="PASS" starttime="20210822 12:43:16.093" endtime="20210822 12:43:16.122"/>
 </kw>
 <doc>This Test Case updates an existing article</doc>
 <tag>ARTICLES</tag>
 <tag>FEATURE-ARTICLES</tag>
-<status status="PASS" starttime="20210821 22:17:53.099" endtime="20210821 22:18:08.722"/>
+<status status="PASS" starttime="20210822 12:43:00.333" endtime="20210822 12:43:16.122"/>
 </test>
 <test id="s1-s1-t3" name="Delete Existing Article">
 <kw name="Given I Open '${site_url}' in '${browser}' Browser" library="common_keywords" sourcename="I Open '${url}' in '${browser}' Browser">
@@ -847,17 +861,17 @@ text field found by ``selector``.</doc>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20210821 22:18:09.230" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/37446275-724e-4523-afa3-9c0eacbe2c01"}</msg>
-<msg timestamp="20210821 22:18:09.817" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/37446275-724e-4523-afa3-9c0eacbe2c01"}</msg>
-<status status="PASS" starttime="20210821 22:18:09.229" endtime="20210821 22:18:09.817"/>
+<msg timestamp="20210822 12:43:16.222" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/93949970-0799-45aa-9606-36bac4897362"}</msg>
+<msg timestamp="20210822 12:43:16.835" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/93949970-0799-45aa-9606-36bac4897362"}</msg>
+<status status="PASS" starttime="20210822 12:43:16.220" endtime="20210822 12:43:16.835"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${browser_timeout}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20210821 22:18:09.821" level="INFO">No context open.</msg>
-<status status="PASS" starttime="20210821 22:18:09.817" endtime="20210821 22:18:09.821"/>
+<msg timestamp="20210822 12:43:16.839" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210822 12:43:16.835" endtime="20210822 12:43:16.839"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${record_video}</arg>
@@ -870,16 +884,15 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="New Context" library="Browser">
 <arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
-<arg>recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20210821 22:18:09.825" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false, "recordVideo": {"size": {"width": 1280, "height": 720}, "dir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos"}}</msg>
-<msg timestamp="20210821 22:18:09.869" level="INFO">Successfully created context. </msg>
-<msg timestamp="20210821 22:18:09.869" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False, 'recordVideo': {'size': {'width': 1280, 'height': 720}, 'dir': '/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos'}}</msg>
-<status status="PASS" starttime="20210821 22:18:09.822" endtime="20210821 22:18:09.870"/>
+<msg timestamp="20210822 12:43:16.843" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210822 12:43:16.877" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210822 12:43:16.877" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210822 12:43:16.841" endtime="20210822 12:43:16.877"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:09.821" endtime="20210821 22:18:09.870"/>
+<status status="PASS" starttime="20210822 12:43:16.840" endtime="20210822 12:43:16.877"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${url}</arg>
@@ -888,11 +901,10 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20210821 22:18:12.835" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
-<msg timestamp="20210821 22:18:12.836" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;video width="1280" height="720" controls&gt;&lt;source src="Videos/38d3d19ce645c9f1c5fff9522de9be78.webm" type="video/webm"&gt;&lt;/video&gt;</msg>
-<status status="PASS" starttime="20210821 22:18:09.870" endtime="20210821 22:18:12.836"/>
+<msg timestamp="20210822 12:43:20.050" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210822 12:43:16.877" endtime="20210822 12:43:20.050"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:09.228" endtime="20210821 22:18:12.836"/>
+<status status="PASS" starttime="20210822 12:43:16.218" endtime="20210822 12:43:20.051"/>
 </kw>
 <kw name="And Validate Title In Home Page" library="home_page_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -906,27 +918,36 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:12.887" level="INFO">${title} = conduit</msg>
-<status status="PASS" starttime="20210821 22:18:12.838" endtime="20210821 22:18:12.887"/>
+<msg timestamp="20210822 12:43:20.106" level="INFO">${title} = conduit</msg>
+<status status="PASS" starttime="20210822 12:43:20.052" endtime="20210822 12:43:20.106"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:18:12.888" level="INFO">conduit</msg>
-<status status="PASS" starttime="20210821 22:18:12.887" endtime="20210821 22:18:12.888"/>
+<msg timestamp="20210822 12:43:20.106" level="INFO">conduit</msg>
+<status status="PASS" starttime="20210822 12:43:20.106" endtime="20210822 12:43:20.106"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:12.837" endtime="20210821 22:18:12.888"/>
+<status status="PASS" starttime="20210822 12:43:20.051" endtime="20210822 12:43:20.107"/>
 </kw>
 <kw name="When Open Sign In Page" library="home_page_keywords">
 <doc>This keyword will click on sign In link in conduit home page</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${sign_in_link}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:43:20.124" level="INFO">Wait for Element with selector: //a[contains(text(),'Sign in')]</msg>
+<status status="PASS" starttime="20210822 12:43:20.107" endtime="20210822 12:43:20.124"/>
+</kw>
 <kw name="Click" library="Browser">
 <arg>selector=${sign_in_link}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:12.889" endtime="20210821 22:18:13.987"/>
+<status status="PASS" starttime="20210822 12:43:20.124" endtime="20210822 12:43:21.226"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:12.888" endtime="20210821 22:18:13.988"/>
+<status status="PASS" starttime="20210822 12:43:20.107" endtime="20210822 12:43:21.227"/>
 </kw>
 <kw name="Then Validate Login Url" library="login_user_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -939,17 +960,17 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<msg timestamp="20210821 22:18:13.993" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
-<status status="PASS" starttime="20210821 22:18:13.989" endtime="20210821 22:18:13.993"/>
+<msg timestamp="20210822 12:43:21.233" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:43:21.229" endtime="20210822 12:43:21.234"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${login_url}</arg>
 <arg>${login_url}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20210821 22:18:13.994" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
-<status status="PASS" starttime="20210821 22:18:13.993" endtime="20210821 22:18:13.994"/>
+<msg timestamp="20210822 12:43:21.236" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:43:21.235" endtime="20210822 12:43:21.236"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:13.988" endtime="20210821 22:18:13.994"/>
+<status status="PASS" starttime="20210822 12:43:21.228" endtime="20210822 12:43:21.236"/>
 </kw>
 <kw name="And Enter Sign In Email Id" library="login_user_keywords">
 <arg>${email_id}</arg>
@@ -960,10 +981,10 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:13.996" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:18:13.995" endtime="20210821 22:18:15.035"/>
+<msg timestamp="20210822 12:43:21.240" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:43:21.238" endtime="20210822 12:43:22.278"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:13.995" endtime="20210821 22:18:15.036"/>
+<status status="PASS" starttime="20210822 12:43:21.237" endtime="20210822 12:43:22.279"/>
 </kw>
 <kw name="And Enter Sign In Password" library="login_user_keywords">
 <arg>${password}</arg>
@@ -975,9 +996,9 @@ Returns a stable identifier for the created page.</doc>
 <tag>Setter</tag>
 <doc>Fills the given secret from ``variable_name`` into the
 text field found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:15.038" endtime="20210821 22:18:16.083"/>
+<status status="PASS" starttime="20210822 12:43:22.280" endtime="20210822 12:43:23.323"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:15.036" endtime="20210821 22:18:16.084"/>
+<status status="PASS" starttime="20210822 12:43:22.279" endtime="20210822 12:43:23.324"/>
 </kw>
 <kw name="Then Click Sign In Button" library="login_user_keywords">
 <doc>This keyword clicks on the sign in button</doc>
@@ -986,9 +1007,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:16.085" endtime="20210821 22:18:17.142"/>
+<status status="PASS" starttime="20210822 12:43:23.326" endtime="20210822 12:43:24.380"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:16.084" endtime="20210821 22:18:17.142"/>
+<status status="PASS" starttime="20210822 12:43:23.325" endtime="20210822 12:43:24.381"/>
 </kw>
 <kw name="And Verify Signed In" library="login_user_keywords">
 <doc>This keyword verifies whether sign in is successfull or not</doc>
@@ -1000,7 +1021,7 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20210821 22:18:17.142" endtime="20210821 22:18:17.146"/>
+<status status="PASS" starttime="20210822 12:43:24.382" endtime="20210822 12:43:24.386"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>selector=${new_article_txt}</arg>
@@ -1008,8 +1029,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:18:17.160" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
-<status status="PASS" starttime="20210821 22:18:17.146" endtime="20210821 22:18:17.160"/>
+<msg timestamp="20210822 12:43:24.404" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
+<status status="PASS" starttime="20210822 12:43:24.387" endtime="20210822 12:43:24.404"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${art_txt}</var>
@@ -1021,10 +1042,10 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:17.199" level="INFO">${art_txt} =  New Article</msg>
-<status status="PASS" starttime="20210821 22:18:17.161" endtime="20210821 22:18:17.199"/>
+<msg timestamp="20210822 12:43:24.428" level="INFO">${art_txt} =  New Article</msg>
+<status status="PASS" starttime="20210822 12:43:24.405" endtime="20210822 12:43:24.428"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:17.142" endtime="20210821 22:18:17.199"/>
+<status status="PASS" starttime="20210822 12:43:24.382" endtime="20210822 12:43:24.429"/>
 </kw>
 <kw name="Then Open User Profile" library="user_profile_keywords">
 <doc>This keyword open user profile</doc>
@@ -1034,17 +1055,17 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:18:17.219" level="INFO">Wait for Element with selector: (//a[@class='nav-link'])[3]</msg>
-<status status="PASS" starttime="20210821 22:18:17.200" endtime="20210821 22:18:17.219"/>
+<msg timestamp="20210822 12:43:24.442" level="INFO">Wait for Element with selector: (//a[@class='nav-link'])[3]</msg>
+<status status="PASS" starttime="20210822 12:43:24.429" endtime="20210822 12:43:24.442"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>selector=${username_txt_link}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:17.220" endtime="20210821 22:18:18.288"/>
+<status status="PASS" starttime="20210822 12:43:24.442" endtime="20210822 12:43:25.501"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:17.199" endtime="20210821 22:18:18.289"/>
+<status status="PASS" starttime="20210822 12:43:24.429" endtime="20210822 12:43:25.502"/>
 </kw>
 <kw name="And Get Logged In User Name" library="user_profile_keywords">
 <doc>This keyword fetches the name of the user</doc>
@@ -1055,17 +1076,17 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:18.316" level="INFO">${username} = candidatex1</msg>
-<status status="PASS" starttime="20210821 22:18:18.290" endtime="20210821 22:18:18.316"/>
+<msg timestamp="20210822 12:43:25.535" level="INFO">${username} = candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:25.504" endtime="20210822 12:43:25.535"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${username}</arg>
 <arg>${username}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20210821 22:18:18.317" level="INFO">${username} = candidatex1</msg>
-<status status="PASS" starttime="20210821 22:18:18.316" endtime="20210821 22:18:18.317"/>
+<msg timestamp="20210822 12:43:25.536" level="INFO">${username} = candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:25.535" endtime="20210822 12:43:25.536"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:18.289" endtime="20210821 22:18:18.317"/>
+<status status="PASS" starttime="20210822 12:43:25.503" endtime="20210822 12:43:25.536"/>
 </kw>
 <kw name="And Validate User Profile Url" library="user_profile_keywords">
 <doc>This keyword validates the user profile url</doc>
@@ -1075,17 +1096,17 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<msg timestamp="20210821 22:18:18.319" level="INFO">${url} = https://qa-task.backbasecloud.com/profile/candidatex1</msg>
-<status status="PASS" starttime="20210821 22:18:18.318" endtime="20210821 22:18:18.319"/>
+<msg timestamp="20210822 12:43:25.539" level="INFO">${url} = https://qa-task.backbasecloud.com/profile/candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:25.537" endtime="20210822 12:43:25.539"/>
 </kw>
 <kw name="Should End With" library="BuiltIn">
 <arg>${url}</arg>
 <arg>profile/${username}</arg>
 <arg>message=User profile url is not navigated properly.</arg>
 <doc>Fails if the string ``str1`` does not end with the string ``str2``.</doc>
-<status status="PASS" starttime="20210821 22:18:18.320" endtime="20210821 22:18:18.320"/>
+<status status="PASS" starttime="20210822 12:43:25.539" endtime="20210822 12:43:25.540"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:18.317" endtime="20210821 22:18:18.320"/>
+<status status="PASS" starttime="20210822 12:43:25.537" endtime="20210822 12:43:25.540"/>
 </kw>
 <kw name="Then Open My Posts" library="user_profile_keywords">
 <doc>This Keyword Ensures thet My posts are open</doc>
@@ -1094,11 +1115,11 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:18.321" endtime="20210821 22:18:19.367"/>
+<status status="PASS" starttime="20210822 12:43:25.541" endtime="20210822 12:43:26.573"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:18.321" endtime="20210821 22:18:19.367"/>
+<status status="PASS" starttime="20210822 12:43:25.540" endtime="20210822 12:43:26.574"/>
 </kw>
-<kw name="Check Count Of Articles" library="articles_keywords">
+<kw name="And Check Count Of Articles" library="articles_keywords">
 <doc>This keyword checks the count of Articles</doc>
 <kw name="Get Element Count" library="Browser">
 <var>${article_count}</var>
@@ -1107,17 +1128,17 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<msg timestamp="20210821 22:18:19.387" level="INFO">${article_count} = 4</msg>
-<status status="PASS" starttime="20210821 22:18:19.369" endtime="20210821 22:18:19.387"/>
+<msg timestamp="20210822 12:43:26.590" level="INFO">${article_count} = 4</msg>
+<status status="PASS" starttime="20210822 12:43:26.575" endtime="20210822 12:43:26.590"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${article_count}</arg>
 <arg>${article_count}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20210821 22:18:19.388" level="INFO">${article_count} = 4</msg>
-<status status="PASS" starttime="20210821 22:18:19.387" endtime="20210821 22:18:19.388"/>
+<msg timestamp="20210822 12:43:26.591" level="INFO">${article_count} = 4</msg>
+<status status="PASS" starttime="20210822 12:43:26.590" endtime="20210822 12:43:26.591"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:19.368" endtime="20210821 22:18:19.388"/>
+<status status="PASS" starttime="20210822 12:43:26.574" endtime="20210822 12:43:26.591"/>
 </kw>
 <kw name="And Read First Article From User Profile" library="articles_keywords">
 <doc>This keyword Open first existing article</doc>
@@ -1128,17 +1149,17 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:19.410" level="INFO">${art_title} = Test</msg>
-<status status="PASS" starttime="20210821 22:18:19.389" endtime="20210821 22:18:19.410"/>
+<msg timestamp="20210822 12:43:26.616" level="INFO">${art_title} = Test</msg>
+<status status="PASS" starttime="20210822 12:43:26.592" endtime="20210822 12:43:26.616"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>selector=${first_art_read_more_txt}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:19.411" endtime="20210821 22:18:20.450"/>
+<status status="PASS" starttime="20210822 12:43:26.617" endtime="20210822 12:43:27.668"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:19.388" endtime="20210821 22:18:20.450"/>
+<status status="PASS" starttime="20210822 12:43:26.592" endtime="20210822 12:43:27.669"/>
 </kw>
 <kw name="And Verify Created Article Url" library="articles_keywords">
 <arg>${art_title}</arg>
@@ -1147,8 +1168,8 @@ text field found by ``selector``.</doc>
 <var>${article_title}</var>
 <arg>${article_title}</arg>
 <doc>Converts string to lower case.</doc>
-<msg timestamp="20210821 22:18:20.453" level="INFO">${article_title} = test</msg>
-<status status="PASS" starttime="20210821 22:18:20.453" endtime="20210821 22:18:20.453"/>
+<msg timestamp="20210822 12:43:27.671" level="INFO">${article_title} = test</msg>
+<status status="PASS" starttime="20210822 12:43:27.671" endtime="20210822 12:43:27.671"/>
 </kw>
 <kw name="Get Url" library="Browser">
 <arg>assertion_operator=contains</arg>
@@ -1158,9 +1179,9 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20210821 22:18:20.454" endtime="20210821 22:18:20.457"/>
+<status status="PASS" starttime="20210822 12:43:27.672" endtime="20210822 12:43:27.675"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:20.451" endtime="20210821 22:18:20.457"/>
+<status status="PASS" starttime="20210822 12:43:27.669" endtime="20210822 12:43:27.676"/>
 </kw>
 <kw name="Then Verify Delete Article Button" library="articles_keywords">
 <doc>This keyword validates the presence of Delete Article button</doc>
@@ -1170,8 +1191,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:18:20.471" level="INFO">Wait for Element with selector: (//button[contains(text(),'Delete Article')])[2]</msg>
-<status status="PASS" starttime="20210821 22:18:20.458" endtime="20210821 22:18:20.471"/>
+<msg timestamp="20210822 12:43:27.690" level="INFO">Wait for Element with selector: (//button[contains(text(),'Delete Article')])[2]</msg>
+<status status="PASS" starttime="20210822 12:43:27.677" endtime="20210822 12:43:27.690"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${delete_article}</var>
@@ -1183,10 +1204,10 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:20.510" level="INFO">${delete_article} =  Delete Article</msg>
-<status status="PASS" starttime="20210821 22:18:20.471" endtime="20210821 22:18:20.510"/>
+<msg timestamp="20210822 12:43:27.718" level="INFO">${delete_article} =  Delete Article</msg>
+<status status="PASS" starttime="20210822 12:43:27.691" endtime="20210822 12:43:27.718"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:20.457" endtime="20210821 22:18:20.510"/>
+<status status="PASS" starttime="20210822 12:43:27.676" endtime="20210822 12:43:27.718"/>
 </kw>
 <kw name="And Click On Delete Article Button" library="articles_keywords">
 <doc>This keywor clicks on Delete Article Button</doc>
@@ -1195,9 +1216,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:20.511" endtime="20210821 22:18:21.550"/>
+<status status="PASS" starttime="20210822 12:43:27.719" endtime="20210822 12:43:28.760"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:20.510" endtime="20210821 22:18:21.550"/>
+<status status="PASS" starttime="20210822 12:43:27.719" endtime="20210822 12:43:28.760"/>
 </kw>
 <kw name="Then Open User Profile" library="user_profile_keywords">
 <doc>This keyword open user profile</doc>
@@ -1207,17 +1228,17 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:18:21.566" level="INFO">Wait for Element with selector: (//a[@class='nav-link'])[3]</msg>
-<status status="PASS" starttime="20210821 22:18:21.552" endtime="20210821 22:18:21.566"/>
+<msg timestamp="20210822 12:43:28.783" level="INFO">Wait for Element with selector: (//a[@class='nav-link'])[3]</msg>
+<status status="PASS" starttime="20210822 12:43:28.762" endtime="20210822 12:43:28.783"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>selector=${username_txt_link}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:21.567" endtime="20210821 22:18:22.616"/>
+<status status="PASS" starttime="20210822 12:43:28.784" endtime="20210822 12:43:29.832"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:21.551" endtime="20210821 22:18:22.617"/>
+<status status="PASS" starttime="20210822 12:43:28.761" endtime="20210822 12:43:29.832"/>
 </kw>
 <kw name="And Check Number Of Articles After Deletion" library="articles_keywords">
 <doc>his keyword verifies that the count of articles reduced by after after deleting an article</doc>
@@ -1225,8 +1246,8 @@ text field found by ``selector``.</doc>
 <var>${count_after_del}</var>
 <arg>${article_count}-1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<msg timestamp="20210821 22:18:22.619" level="INFO">${count_after_del} = 3</msg>
-<status status="PASS" starttime="20210821 22:18:22.618" endtime="20210821 22:18:22.619"/>
+<msg timestamp="20210822 12:43:29.834" level="INFO">${count_after_del} = 3</msg>
+<status status="PASS" starttime="20210822 12:43:29.834" endtime="20210822 12:43:29.834"/>
 </kw>
 <kw name="Get Element Count" library="Browser">
 <var>${article_count_After_del}</var>
@@ -1238,17 +1259,534 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<msg timestamp="20210821 22:18:22.632" level="INFO">${article_count_After_del} = 3</msg>
-<status status="PASS" starttime="20210821 22:18:22.620" endtime="20210821 22:18:22.632"/>
+<msg timestamp="20210822 12:43:29.848" level="INFO">${article_count_After_del} = 3</msg>
+<status status="PASS" starttime="20210822 12:43:29.835" endtime="20210822 12:43:29.848"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:22.617" endtime="20210821 22:18:22.633"/>
+<status status="PASS" starttime="20210822 12:43:29.833" endtime="20210822 12:43:29.848"/>
 </kw>
 <doc>This test case deletes the existing article</doc>
 <tag>ARTICLES</tag>
 <tag>FEATURE-ARTICLES</tag>
-<status status="PASS" starttime="20210821 22:18:09.225" endtime="20210821 22:18:22.633"/>
+<status status="PASS" starttime="20210822 12:43:16.213" endtime="20210822 12:43:29.848"/>
 </test>
-<status status="PASS" starttime="20210821 22:17:34.264" endtime="20210821 22:18:23.118"/>
+<test id="s1-s1-t4" name="Delete Article Button Not Shown To Other Author">
+<kw name="Given I Open '${site_url}' in '${browser}' Browser" library="common_keywords" sourcename="I Open '${url}' in '${browser}' Browser">
+<doc>This keyword opens given url in the browser of the choice.</doc>
+<kw name="New Browser" library="Browser">
+<arg>browser=${browser}</arg>
+<arg>headless=${headless_driver}</arg>
+<arg>slowMo=1s</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 12:43:29.973" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/120bb400-7fcc-4bd7-8e2d-76cc122348b9"}</msg>
+<msg timestamp="20210822 12:43:30.578" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/120bb400-7fcc-4bd7-8e2d-76cc122348b9"}</msg>
+<status status="PASS" starttime="20210822 12:43:29.971" endtime="20210822 12:43:30.579"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>${browser_timeout}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20210822 12:43:30.583" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210822 12:43:30.579" endtime="20210822 12:43:30.583"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${record_video}</arg>
+<arg>New Context</arg>
+<arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
+<arg>recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}</arg>
+<arg>ELSE</arg>
+<arg>New Context</arg>
+<arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="New Context" library="Browser">
+<arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20210822 12:43:30.603" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210822 12:43:30.657" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210822 12:43:30.657" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210822 12:43:30.602" endtime="20210822 12:43:30.657"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:30.583" endtime="20210822 12:43:30.657"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210822 12:43:34.099" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210822 12:43:30.658" endtime="20210822 12:43:34.099"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:29.969" endtime="20210822 12:43:34.100"/>
+</kw>
+<kw name="And Validate Title In Home Page" library="home_page_keywords">
+<doc>This keyword validates tile of the home page</doc>
+<kw name="Get Text" library="Browser">
+<var>${title}</var>
+<arg>selector=${conduit_txt}</arg>
+<arg>assertion_operator=should be</arg>
+<arg>assertion_expected=conduit</arg>
+<arg>message=Unable to open Conduit homepage.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210822 12:43:34.159" level="INFO">${title} = conduit</msg>
+<status status="PASS" starttime="20210822 12:43:34.101" endtime="20210822 12:43:34.159"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210822 12:43:34.159" level="INFO">conduit</msg>
+<status status="PASS" starttime="20210822 12:43:34.159" endtime="20210822 12:43:34.159"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:34.100" endtime="20210822 12:43:34.160"/>
+</kw>
+<kw name="When Open Sign In Page" library="home_page_keywords">
+<doc>This keyword will click on sign In link in conduit home page</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${sign_in_link}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:43:34.172" level="INFO">Wait for Element with selector: //a[contains(text(),'Sign in')]</msg>
+<status status="PASS" starttime="20210822 12:43:34.160" endtime="20210822 12:43:34.172"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>selector=${sign_in_link}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:43:34.173" endtime="20210822 12:43:35.307"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:34.160" endtime="20210822 12:43:35.307"/>
+</kw>
+<kw name="Then Validate Login Url" library="login_user_keywords">
+<doc>This keyword validates tile of the home page</doc>
+<kw name="Get Url" library="Browser">
+<var>${login_url}</var>
+<arg>assertion_operator=should end with</arg>
+<arg>assertion_expected=login</arg>
+<arg>message=Unable to open login page.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<msg timestamp="20210822 12:43:35.312" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:43:35.309" endtime="20210822 12:43:35.312"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${login_url}</arg>
+<arg>${login_url}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20210822 12:43:35.313" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:43:35.313" endtime="20210822 12:43:35.313"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:35.308" endtime="20210822 12:43:35.314"/>
+</kw>
+<kw name="And Enter Sign In Email Id" library="login_user_keywords">
+<arg>${email_id}</arg>
+<doc>This keyword enter email id for sign in</doc>
+<kw name="Fill Text" library="Browser">
+<arg>selector=${sign_in_email_txt_box}</arg>
+<arg>txt=${email_id}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 12:43:35.315" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:43:35.314" endtime="20210822 12:43:36.344"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:35.314" endtime="20210822 12:43:36.345"/>
+</kw>
+<kw name="And Enter Sign In Password" library="login_user_keywords">
+<arg>${password}</arg>
+<doc>This keyword enter password for sign in</doc>
+<kw name="Fill Secret" library="Browser">
+<arg>selector=${sign_in_pwd_txt_box}</arg>
+<arg>secret=$password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Fills the given secret from ``variable_name`` into the
+text field found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:43:36.348" endtime="20210822 12:43:37.386"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:36.347" endtime="20210822 12:43:37.386"/>
+</kw>
+<kw name="Then Click Sign In Button" library="login_user_keywords">
+<doc>This keyword clicks on the sign in button</doc>
+<kw name="Click" library="Browser">
+<arg>selector=${sign_in_btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:43:37.388" endtime="20210822 12:43:38.452"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:37.387" endtime="20210822 12:43:38.452"/>
+</kw>
+<kw name="And Verify Signed In" library="login_user_keywords">
+<doc>This keyword verifies whether sign in is successfull or not</doc>
+<kw name="Get Url" library="Browser">
+<arg>assertion_operator=should be</arg>
+<arg>assertion_expected=${site_url}/</arg>
+<arg>message=An Error Occurred!. Email or password is invalid.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20210822 12:43:38.454" endtime="20210822 12:43:38.457"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${new_article_txt}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:43:38.472" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
+<status status="PASS" starttime="20210822 12:43:38.458" endtime="20210822 12:43:38.473"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${art_txt}</var>
+<arg>selector=${new_article_txt}</arg>
+<arg>assertion_operator=contains</arg>
+<arg>assertion_expected=New Article</arg>
+<arg>message=Sign In was unsuccessful</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210822 12:43:38.506" level="INFO">${art_txt} =  New Article</msg>
+<status status="PASS" starttime="20210822 12:43:38.473" endtime="20210822 12:43:38.506"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:38.453" endtime="20210822 12:43:38.506"/>
+</kw>
+<kw name="And Get Signed In User Name" library="home_page_keywords">
+<doc>This keyword fetches the name of the user</doc>
+<kw name="Get Text" library="Browser">
+<var>${username}</var>
+<arg>selector=${username_user_profile_txt}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210822 12:43:38.534" level="INFO">${username} = candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:38.507" endtime="20210822 12:43:38.535"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${username}</arg>
+<arg>${username}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20210822 12:43:38.535" level="INFO">${username} = candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:38.535" endtime="20210822 12:43:38.535"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:38.506" endtime="20210822 12:43:38.535"/>
+</kw>
+<kw name="Then Click On Global Feed" library="home_page_keywords">
+<doc>This keyword clicks on global feed text</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${global_feed_txt}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:43:38.547" level="INFO">Wait for Element with selector: //a[contains(text(),'Global Feed')]</msg>
+<status status="PASS" starttime="20210822 12:43:38.536" endtime="20210822 12:43:38.547"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>selector=${global_feed_txt}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:43:38.547" endtime="20210822 12:43:39.601"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:38.536" endtime="20210822 12:43:39.601"/>
+</kw>
+<kw name="And Navigate To Other Author's Article" library="articles_keywords">
+<doc>This keyword navigates to the article from other user</doc>
+<for flavor="IN RANGE">
+<var>${index}</var>
+<value>1</value>
+<value>11</value>
+<iter>
+<var name="${index}">1</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${author}</var>
+<arg>SEPARATOR=</arg>
+<arg>${author_name_global_feed}</arg>
+<arg>${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20210822 12:43:39.605" level="INFO">${author} = (//a[@class='author'])[1]</msg>
+<status status="PASS" starttime="20210822 12:43:39.604" endtime="20210822 12:43:39.605"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${author_txt}</var>
+<arg>selector=${author}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210822 12:43:39.632" level="INFO">${author_txt} = candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:39.605" endtime="20210822 12:43:39.632"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${art_preview}</var>
+<arg>SEPARATOR=</arg>
+<arg>${article_preview_span}</arg>
+<arg>${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20210822 12:43:39.632" level="INFO">${art_preview} = (//a[@class='preview-link']/span)[1]</msg>
+<status status="PASS" starttime="20210822 12:43:39.632" endtime="20210822 12:43:39.632"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${author_txt}'!='${username}'</arg>
+<arg>Run Keywords</arg>
+<arg>Hover</arg>
+<arg>selector=${art_preview}</arg>
+<arg>AND</arg>
+<arg>Browser.Click</arg>
+<arg>selector=${art_preview}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20210822 12:43:39.633" endtime="20210822 12:43:39.633"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>'${author_txt}'!='${username}'</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20210822 12:43:39.633" endtime="20210822 12:43:39.634"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:39.603" endtime="20210822 12:43:39.634"/>
+</iter>
+<iter>
+<var name="${index}">2</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${author}</var>
+<arg>SEPARATOR=</arg>
+<arg>${author_name_global_feed}</arg>
+<arg>${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20210822 12:43:39.634" level="INFO">${author} = (//a[@class='author'])[2]</msg>
+<status status="PASS" starttime="20210822 12:43:39.634" endtime="20210822 12:43:39.634"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${author_txt}</var>
+<arg>selector=${author}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210822 12:43:39.690" level="INFO">${author_txt} = candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:39.635" endtime="20210822 12:43:39.690"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${art_preview}</var>
+<arg>SEPARATOR=</arg>
+<arg>${article_preview_span}</arg>
+<arg>${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20210822 12:43:39.691" level="INFO">${art_preview} = (//a[@class='preview-link']/span)[2]</msg>
+<status status="PASS" starttime="20210822 12:43:39.690" endtime="20210822 12:43:39.691"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${author_txt}'!='${username}'</arg>
+<arg>Run Keywords</arg>
+<arg>Hover</arg>
+<arg>selector=${art_preview}</arg>
+<arg>AND</arg>
+<arg>Browser.Click</arg>
+<arg>selector=${art_preview}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20210822 12:43:39.691" endtime="20210822 12:43:39.691"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>'${author_txt}'!='${username}'</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20210822 12:43:39.691" endtime="20210822 12:43:39.692"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:39.634" endtime="20210822 12:43:39.692"/>
+</iter>
+<iter>
+<var name="${index}">3</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${author}</var>
+<arg>SEPARATOR=</arg>
+<arg>${author_name_global_feed}</arg>
+<arg>${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20210822 12:43:39.693" level="INFO">${author} = (//a[@class='author'])[3]</msg>
+<status status="PASS" starttime="20210822 12:43:39.692" endtime="20210822 12:43:39.693"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${author_txt}</var>
+<arg>selector=${author}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210822 12:43:39.713" level="INFO">${author_txt} = candidatex1</msg>
+<status status="PASS" starttime="20210822 12:43:39.693" endtime="20210822 12:43:39.713"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${art_preview}</var>
+<arg>SEPARATOR=</arg>
+<arg>${article_preview_span}</arg>
+<arg>${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20210822 12:43:39.714" level="INFO">${art_preview} = (//a[@class='preview-link']/span)[3]</msg>
+<status status="PASS" starttime="20210822 12:43:39.714" endtime="20210822 12:43:39.714"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${author_txt}'!='${username}'</arg>
+<arg>Run Keywords</arg>
+<arg>Hover</arg>
+<arg>selector=${art_preview}</arg>
+<arg>AND</arg>
+<arg>Browser.Click</arg>
+<arg>selector=${art_preview}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20210822 12:43:39.714" endtime="20210822 12:43:39.715"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>'${author_txt}'!='${username}'</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<status status="PASS" starttime="20210822 12:43:39.715" endtime="20210822 12:43:39.715"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:39.692" endtime="20210822 12:43:39.715"/>
+</iter>
+<iter>
+<var name="${index}">4</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${author}</var>
+<arg>SEPARATOR=</arg>
+<arg>${author_name_global_feed}</arg>
+<arg>${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20210822 12:43:39.716" level="INFO">${author} = (//a[@class='author'])[4]</msg>
+<status status="PASS" starttime="20210822 12:43:39.716" endtime="20210822 12:43:39.716"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${author_txt}</var>
+<arg>selector=${author}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210822 12:43:39.739" level="INFO">${author_txt} = qalife</msg>
+<status status="PASS" starttime="20210822 12:43:39.716" endtime="20210822 12:43:39.739"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${art_preview}</var>
+<arg>SEPARATOR=</arg>
+<arg>${article_preview_span}</arg>
+<arg>${index}]</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20210822 12:43:39.740" level="INFO">${art_preview} = (//a[@class='preview-link']/span)[4]</msg>
+<status status="PASS" starttime="20210822 12:43:39.739" endtime="20210822 12:43:39.740"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${author_txt}'!='${username}'</arg>
+<arg>Run Keywords</arg>
+<arg>Hover</arg>
+<arg>selector=${art_preview}</arg>
+<arg>AND</arg>
+<arg>Browser.Click</arg>
+<arg>selector=${art_preview}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Run Keywords" library="BuiltIn">
+<arg>Hover</arg>
+<arg>selector=${art_preview}</arg>
+<arg>AND</arg>
+<arg>Browser.Click</arg>
+<arg>selector=${art_preview}</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<kw name="Hover" library="Browser">
+<arg>selector=${art_preview}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Moves the virtual mouse and scrolls to the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:43:39.741" endtime="20210822 12:43:40.785"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>selector=${art_preview}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:43:40.785" endtime="20210822 12:43:41.836"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:39.740" endtime="20210822 12:43:41.836"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:39.740" endtime="20210822 12:43:41.836"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>'${author_txt}'!='${username}'</arg>
+<doc>Stops executing the enclosing for loop if the ``condition`` is true.</doc>
+<msg timestamp="20210822 12:43:41.837" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20210822 12:43:41.836" endtime="20210822 12:43:41.839"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:39.716" endtime="20210822 12:43:41.839"/>
+</iter>
+<status status="PASS" starttime="20210822 12:43:39.603" endtime="20210822 12:43:41.839"/>
+</for>
+<status status="PASS" starttime="20210822 12:43:39.602" endtime="20210822 12:43:41.840"/>
+</kw>
+<kw name="And Validate Delete Article Option Is Not Available" library="articles_keywords">
+<doc>This keyword validates that delete article option is not available for other users</doc>
+<kw name="Get Url" library="Browser">
+<arg>assertion_operator=contains</arg>
+<arg>assertion_expected=article/</arg>
+<arg>message=Navigation unsuccessful to article</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20210822 12:43:41.841" endtime="20210822 12:43:41.844"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>selector=${follow_user_txt}</arg>
+<arg>assertion_operator=contains</arg>
+<arg>assertion_expected=Follow</arg>
+<arg>message=Follow User button is not present</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:43:41.845" endtime="20210822 12:43:41.867"/>
+</kw>
+<kw name="Get Element State" library="Browser">
+<arg>selector=${delete_article_txt_link}</arg>
+<arg>state=visible</arg>
+<arg>assertion_operator=should be</arg>
+<arg>assertion_expected=None</arg>
+<arg>message=Other user can also delete the article</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Get the given state from the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:43:41.867" endtime="20210822 12:43:41.985"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:41.840" endtime="20210822 12:43:41.985"/>
+</kw>
+<doc>This test case checks Delete Article button shown to article's author</doc>
+<tag>ARTICLES</tag>
+<tag>FEATURE-ARTICLES</tag>
+<tag>TESTING</tag>
+<status status="PASS" starttime="20210822 12:43:29.962" endtime="20210822 12:43:41.985"/>
+</test>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<arg>ALL</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser. Activated browser is set to first active browser.
+Closes all context and pages belonging to this browser.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 12:43:43.119" level="INFO">Closed all browsers</msg>
+<status status="PASS" starttime="20210822 12:43:42.117" endtime="20210822 12:43:43.119"/>
+</kw>
+<status status="PASS" starttime="20210822 12:42:43.192" endtime="20210822 12:43:43.119"/>
 </suite>
 <suite id="s1-s2" name="Home Page Test" source="/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Tests/home_page_test.robot">
 <test id="s1-s2-t1" name="Validate Home Page">
@@ -1262,17 +1800,17 @@ text field found by ``selector``.</doc>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20210821 22:18:23.139" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/fc4319b3-91a8-40cd-b286-34b2ae39582a"}</msg>
-<msg timestamp="20210821 22:18:23.708" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/fc4319b3-91a8-40cd-b286-34b2ae39582a"}</msg>
-<status status="PASS" starttime="20210821 22:18:23.138" endtime="20210821 22:18:23.722"/>
+<msg timestamp="20210822 12:43:43.171" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/8ad4a9a2-2e37-4c23-971a-663d07dfc491"}</msg>
+<msg timestamp="20210822 12:43:43.768" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/8ad4a9a2-2e37-4c23-971a-663d07dfc491"}</msg>
+<status status="PASS" starttime="20210822 12:43:43.169" endtime="20210822 12:43:43.768"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${browser_timeout}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20210821 22:18:23.728" level="INFO">No context open.</msg>
-<status status="PASS" starttime="20210821 22:18:23.722" endtime="20210821 22:18:23.728"/>
+<msg timestamp="20210822 12:43:43.774" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210822 12:43:43.769" endtime="20210822 12:43:43.775"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${record_video}</arg>
@@ -1285,16 +1823,15 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="New Context" library="Browser">
 <arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
-<arg>recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20210821 22:18:23.732" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false, "recordVideo": {"size": {"width": 1280, "height": 720}, "dir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos"}}</msg>
-<msg timestamp="20210821 22:18:23.833" level="INFO">Successfully created context. </msg>
-<msg timestamp="20210821 22:18:23.833" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False, 'recordVideo': {'size': {'width': 1280, 'height': 720}, 'dir': '/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos'}}</msg>
-<status status="PASS" starttime="20210821 22:18:23.729" endtime="20210821 22:18:23.833"/>
+<msg timestamp="20210822 12:43:43.790" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210822 12:43:43.857" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210822 12:43:43.857" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210822 12:43:43.783" endtime="20210822 12:43:43.858"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:23.729" endtime="20210821 22:18:23.833"/>
+<status status="PASS" starttime="20210822 12:43:43.775" endtime="20210822 12:43:43.858"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${url}</arg>
@@ -1303,11 +1840,10 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20210821 22:18:26.713" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
-<msg timestamp="20210821 22:18:26.714" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;video width="1280" height="720" controls&gt;&lt;source src="Videos/e932bc90e543eb20776f6d65b5e42283.webm" type="video/webm"&gt;&lt;/video&gt;</msg>
-<status status="PASS" starttime="20210821 22:18:23.834" endtime="20210821 22:18:26.714"/>
+<msg timestamp="20210822 12:43:47.064" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210822 12:43:43.858" endtime="20210822 12:43:47.064"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:23.137" endtime="20210821 22:18:26.715"/>
+<status status="PASS" starttime="20210822 12:43:43.167" endtime="20210822 12:43:47.065"/>
 </kw>
 <kw name="Then Validate Title In Home Page" library="home_page_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -1321,16 +1857,16 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:26.760" level="INFO">${title} = conduit</msg>
-<status status="PASS" starttime="20210821 22:18:26.716" endtime="20210821 22:18:26.760"/>
+<msg timestamp="20210822 12:43:47.108" level="INFO">${title} = conduit</msg>
+<status status="PASS" starttime="20210822 12:43:47.066" endtime="20210822 12:43:47.108"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:18:26.760" level="INFO">conduit</msg>
-<status status="PASS" starttime="20210821 22:18:26.760" endtime="20210821 22:18:26.760"/>
+<msg timestamp="20210822 12:43:47.109" level="INFO">conduit</msg>
+<status status="PASS" starttime="20210822 12:43:47.108" endtime="20210822 12:43:47.109"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:26.716" endtime="20210821 22:18:26.761"/>
+<status status="PASS" starttime="20210822 12:43:47.065" endtime="20210822 12:43:47.109"/>
 </kw>
 <kw name="And Validate Tags are present" library="home_page_keywords">
 <doc>This keyword validates that the tags are present in the homepage</doc>
@@ -1344,16 +1880,16 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<msg timestamp="20210821 22:18:27.371" level="INFO">${count_tags} = 792</msg>
-<status status="PASS" starttime="20210821 22:18:26.761" endtime="20210821 22:18:27.371"/>
+<msg timestamp="20210822 12:43:47.614" level="INFO">${count_tags} = 792</msg>
+<status status="PASS" starttime="20210822 12:43:47.110" endtime="20210822 12:43:47.614"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${count_tags}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:18:27.372" level="INFO">792</msg>
-<status status="PASS" starttime="20210821 22:18:27.371" endtime="20210821 22:18:27.372"/>
+<msg timestamp="20210822 12:43:47.615" level="INFO">792</msg>
+<status status="PASS" starttime="20210822 12:43:47.615" endtime="20210822 12:43:47.615"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:26.761" endtime="20210821 22:18:27.372"/>
+<status status="PASS" starttime="20210822 12:43:47.109" endtime="20210822 12:43:47.615"/>
 </kw>
 <kw name="And List Of Articles Is Present" library="home_page_keywords">
 <doc>This keyword checks that global feed articles are present.</doc>
@@ -1367,16 +1903,16 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<msg timestamp="20210821 22:18:27.447" level="INFO">${count_articles} = 10</msg>
-<status status="PASS" starttime="20210821 22:18:27.373" endtime="20210821 22:18:27.447"/>
+<msg timestamp="20210822 12:43:47.740" level="INFO">${count_articles} = 10</msg>
+<status status="PASS" starttime="20210822 12:43:47.616" endtime="20210822 12:43:47.740"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${count_articles}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:18:27.448" level="INFO">10</msg>
-<status status="PASS" starttime="20210821 22:18:27.447" endtime="20210821 22:18:27.448"/>
+<msg timestamp="20210822 12:43:47.741" level="INFO">10</msg>
+<status status="PASS" starttime="20210822 12:43:47.741" endtime="20210822 12:43:47.741"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:27.373" endtime="20210821 22:18:27.448"/>
+<status status="PASS" starttime="20210822 12:43:47.616" endtime="20210822 12:43:47.741"/>
 </kw>
 <kw name="And Validate Pagination On Home Page" library="home_page_keywords">
 <doc>This keyword checks for the list of pagination of articles</doc>
@@ -1390,23 +1926,33 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the count of elements found with ``selector``.</doc>
-<msg timestamp="20210821 22:18:27.650" level="INFO">${count_pages} = 269</msg>
-<status status="PASS" starttime="20210821 22:18:27.449" endtime="20210821 22:18:27.650"/>
+<msg timestamp="20210822 12:43:47.957" level="INFO">${count_pages} = 269</msg>
+<status status="PASS" starttime="20210822 12:43:47.742" endtime="20210822 12:43:47.957"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${count_pages}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:18:27.650" level="INFO">269</msg>
-<status status="PASS" starttime="20210821 22:18:27.650" endtime="20210821 22:18:27.650"/>
+<msg timestamp="20210822 12:43:47.958" level="INFO">269</msg>
+<status status="PASS" starttime="20210822 12:43:47.957" endtime="20210822 12:43:47.958"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:27.448" endtime="20210821 22:18:27.651"/>
+<status status="PASS" starttime="20210822 12:43:47.741" endtime="20210822 12:43:47.958"/>
 </kw>
 <doc>This test case login using basic authentication and validates Home Page</doc>
 <tag>FEATURE-ARTICLES</tag>
 <tag>HOME_PAGE</tag>
-<status status="PASS" starttime="20210821 22:18:23.135" endtime="20210821 22:18:27.651"/>
+<status status="PASS" starttime="20210822 12:43:43.161" endtime="20210822 12:43:47.958"/>
 </test>
-<status status="PASS" starttime="20210821 22:18:23.122" endtime="20210821 22:18:28.510"/>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<arg>ALL</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser. Activated browser is set to first active browser.
+Closes all context and pages belonging to this browser.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 12:43:48.456" level="INFO">Closed all browsers</msg>
+<status status="PASS" starttime="20210822 12:43:48.097" endtime="20210822 12:43:48.456"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:43.128" endtime="20210822 12:43:48.456"/>
 </suite>
 <suite id="s1-s3" name="Login User Test" source="/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Tests/login_user_test.robot">
 <test id="s1-s3-t1" name="Sign In For Registered User">
@@ -1420,17 +1966,17 @@ Returns a stable identifier for the created page.</doc>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20210821 22:18:28.560" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/0fe21a14-6c33-4b3d-ba40-1783cb66392c"}</msg>
-<msg timestamp="20210821 22:18:29.207" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/0fe21a14-6c33-4b3d-ba40-1783cb66392c"}</msg>
-<status status="PASS" starttime="20210821 22:18:28.559" endtime="20210821 22:18:29.207"/>
+<msg timestamp="20210822 12:43:48.517" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/87b528d7-6d59-4263-911b-4ac007ca9e6a"}</msg>
+<msg timestamp="20210822 12:43:49.100" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/87b528d7-6d59-4263-911b-4ac007ca9e6a"}</msg>
+<status status="PASS" starttime="20210822 12:43:48.515" endtime="20210822 12:43:49.101"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${browser_timeout}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20210821 22:18:29.211" level="INFO">No context open.</msg>
-<status status="PASS" starttime="20210821 22:18:29.208" endtime="20210821 22:18:29.211"/>
+<msg timestamp="20210822 12:43:49.103" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210822 12:43:49.101" endtime="20210822 12:43:49.104"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${record_video}</arg>
@@ -1443,16 +1989,15 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="New Context" library="Browser">
 <arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
-<arg>recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20210821 22:18:29.217" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false, "recordVideo": {"size": {"width": 1280, "height": 720}, "dir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos"}}</msg>
-<msg timestamp="20210821 22:18:29.241" level="INFO">Successfully created context. </msg>
-<msg timestamp="20210821 22:18:29.241" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False, 'recordVideo': {'size': {'width': 1280, 'height': 720}, 'dir': '/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos'}}</msg>
-<status status="PASS" starttime="20210821 22:18:29.213" endtime="20210821 22:18:29.241"/>
+<msg timestamp="20210822 12:43:49.106" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210822 12:43:49.176" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210822 12:43:49.176" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210822 12:43:49.104" endtime="20210822 12:43:49.177"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:29.212" endtime="20210821 22:18:29.242"/>
+<status status="PASS" starttime="20210822 12:43:49.104" endtime="20210822 12:43:49.177"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${url}</arg>
@@ -1461,11 +2006,10 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20210821 22:18:31.865" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
-<msg timestamp="20210821 22:18:31.866" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;video width="1280" height="720" controls&gt;&lt;source src="Videos/d58196d7236e9c3d657dcd45c2b8f8f8.webm" type="video/webm"&gt;&lt;/video&gt;</msg>
-<status status="PASS" starttime="20210821 22:18:29.242" endtime="20210821 22:18:31.866"/>
+<msg timestamp="20210822 12:43:52.308" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210822 12:43:49.177" endtime="20210822 12:43:52.308"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:28.557" endtime="20210821 22:18:31.867"/>
+<status status="PASS" starttime="20210822 12:43:48.514" endtime="20210822 12:43:52.309"/>
 </kw>
 <kw name="And Validate Title In Home Page" library="home_page_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -1479,27 +2023,36 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:31.911" level="INFO">${title} = conduit</msg>
-<status status="PASS" starttime="20210821 22:18:31.868" endtime="20210821 22:18:31.911"/>
+<msg timestamp="20210822 12:43:52.356" level="INFO">${title} = conduit</msg>
+<status status="PASS" starttime="20210822 12:43:52.310" endtime="20210822 12:43:52.356"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:18:31.911" level="INFO">conduit</msg>
-<status status="PASS" starttime="20210821 22:18:31.911" endtime="20210821 22:18:31.911"/>
+<msg timestamp="20210822 12:43:52.357" level="INFO">conduit</msg>
+<status status="PASS" starttime="20210822 12:43:52.356" endtime="20210822 12:43:52.357"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:31.867" endtime="20210821 22:18:31.911"/>
+<status status="PASS" starttime="20210822 12:43:52.309" endtime="20210822 12:43:52.357"/>
 </kw>
 <kw name="When Open Sign In Page" library="home_page_keywords">
 <doc>This keyword will click on sign In link in conduit home page</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${sign_in_link}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:43:52.369" level="INFO">Wait for Element with selector: //a[contains(text(),'Sign in')]</msg>
+<status status="PASS" starttime="20210822 12:43:52.358" endtime="20210822 12:43:52.370"/>
+</kw>
 <kw name="Click" library="Browser">
 <arg>selector=${sign_in_link}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:31.912" endtime="20210821 22:18:33.017"/>
+<status status="PASS" starttime="20210822 12:43:52.370" endtime="20210822 12:43:53.475"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:31.912" endtime="20210821 22:18:33.018"/>
+<status status="PASS" starttime="20210822 12:43:52.357" endtime="20210822 12:43:53.475"/>
 </kw>
 <kw name="Then Validate Login Url" library="login_user_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -1512,17 +2065,17 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<msg timestamp="20210821 22:18:33.023" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
-<status status="PASS" starttime="20210821 22:18:33.019" endtime="20210821 22:18:33.023"/>
+<msg timestamp="20210822 12:43:53.481" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:43:53.477" endtime="20210822 12:43:53.481"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${login_url}</arg>
 <arg>${login_url}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20210821 22:18:33.024" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
-<status status="PASS" starttime="20210821 22:18:33.023" endtime="20210821 22:18:33.024"/>
+<msg timestamp="20210822 12:43:53.482" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:43:53.481" endtime="20210822 12:43:53.482"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:33.018" endtime="20210821 22:18:33.025"/>
+<status status="PASS" starttime="20210822 12:43:53.476" endtime="20210822 12:43:53.482"/>
 </kw>
 <kw name="And Enter Sign In Email Id" library="login_user_keywords">
 <arg>${email_id}</arg>
@@ -1533,10 +2086,10 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:33.027" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:18:33.026" endtime="20210821 22:18:34.054"/>
+<msg timestamp="20210822 12:43:53.484" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:43:53.483" endtime="20210822 12:43:54.514"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:33.025" endtime="20210821 22:18:34.054"/>
+<status status="PASS" starttime="20210822 12:43:53.483" endtime="20210822 12:43:54.515"/>
 </kw>
 <kw name="And Enter Sign In Password" library="login_user_keywords">
 <arg>${password}</arg>
@@ -1548,9 +2101,9 @@ Returns a stable identifier for the created page.</doc>
 <tag>Setter</tag>
 <doc>Fills the given secret from ``variable_name`` into the
 text field found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:34.055" endtime="20210821 22:18:35.107"/>
+<status status="PASS" starttime="20210822 12:43:54.516" endtime="20210822 12:43:55.552"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:34.055" endtime="20210821 22:18:35.108"/>
+<status status="PASS" starttime="20210822 12:43:54.515" endtime="20210822 12:43:55.553"/>
 </kw>
 <kw name="Then Click Sign In Button" library="login_user_keywords">
 <doc>This keyword clicks on the sign in button</doc>
@@ -1559,9 +2112,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:35.110" endtime="20210821 22:18:36.166"/>
+<status status="PASS" starttime="20210822 12:43:55.555" endtime="20210822 12:43:56.618"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:35.108" endtime="20210821 22:18:36.166"/>
+<status status="PASS" starttime="20210822 12:43:55.554" endtime="20210822 12:43:56.619"/>
 </kw>
 <kw name="And Verify Signed In" library="login_user_keywords">
 <doc>This keyword verifies whether sign in is successfull or not</doc>
@@ -1573,7 +2126,7 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<status status="PASS" starttime="20210821 22:18:36.167" endtime="20210821 22:18:36.169"/>
+<status status="PASS" starttime="20210822 12:43:56.620" endtime="20210822 12:43:56.625"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>selector=${new_article_txt}</arg>
@@ -1581,8 +2134,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20210821 22:18:36.184" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
-<status status="PASS" starttime="20210821 22:18:36.169" endtime="20210821 22:18:36.184"/>
+<msg timestamp="20210822 12:43:56.641" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
+<status status="PASS" starttime="20210822 12:43:56.625" endtime="20210822 12:43:56.641"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${art_txt}</var>
@@ -1594,17 +2147,27 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:36.213" level="INFO">${art_txt} =  New Article</msg>
-<status status="PASS" starttime="20210821 22:18:36.184" endtime="20210821 22:18:36.213"/>
+<msg timestamp="20210822 12:43:56.666" level="INFO">${art_txt} =  New Article</msg>
+<status status="PASS" starttime="20210822 12:43:56.641" endtime="20210822 12:43:56.666"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:36.166" endtime="20210821 22:18:36.214"/>
+<status status="PASS" starttime="20210822 12:43:56.619" endtime="20210822 12:43:56.666"/>
 </kw>
 <doc>This test case login using basic authentication and validates Home Page</doc>
 <tag>FEATURE-ARTICLES</tag>
 <tag>LOGIN_USER</tag>
-<status status="PASS" starttime="20210821 22:18:28.554" endtime="20210821 22:18:36.214"/>
+<status status="PASS" starttime="20210822 12:43:48.509" endtime="20210822 12:43:56.666"/>
 </test>
-<status status="PASS" starttime="20210821 22:18:28.512" endtime="20210821 22:18:37.060"/>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<arg>ALL</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser. Activated browser is set to first active browser.
+Closes all context and pages belonging to this browser.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 12:43:57.095" level="INFO">Closed all browsers</msg>
+<status status="PASS" starttime="20210822 12:43:56.751" endtime="20210822 12:43:57.096"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:48.460" endtime="20210822 12:43:57.096"/>
 </suite>
 <suite id="s1-s4" name="Register User Test" source="/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Tests/register_user_test.robot">
 <test id="s1-s4-t1" name="Register A User">
@@ -1618,17 +2181,17 @@ text field found by ``selector``.</doc>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.
 See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
-<msg timestamp="20210821 22:18:37.081" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/1bd17275-9812-4992-b115-32b1ff7c3790"}</msg>
-<msg timestamp="20210821 22:18:37.685" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/1bd17275-9812-4992-b115-32b1ff7c3790"}</msg>
-<status status="PASS" starttime="20210821 22:18:37.080" endtime="20210821 22:18:37.686"/>
+<msg timestamp="20210822 12:43:57.146" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/1af38d12-0924-46f6-8d72-dd656e2ff7b7"}</msg>
+<msg timestamp="20210822 12:43:57.733" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/1af38d12-0924-46f6-8d72-dd656e2ff7b7"}</msg>
+<status status="PASS" starttime="20210822 12:43:57.143" endtime="20210822 12:43:57.734"/>
 </kw>
 <kw name="Set Browser Timeout" library="Browser">
 <arg>${browser_timeout}</arg>
 <tag>Config</tag>
 <tag>Setter</tag>
 <doc>Sets the timeout used by most input and getter keywords.</doc>
-<msg timestamp="20210821 22:18:37.689" level="INFO">No context open.</msg>
-<status status="PASS" starttime="20210821 22:18:37.686" endtime="20210821 22:18:37.689"/>
+<msg timestamp="20210822 12:43:57.737" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210822 12:43:57.734" endtime="20210822 12:43:57.737"/>
 </kw>
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>${record_video}</arg>
@@ -1641,16 +2204,15 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
 <kw name="New Context" library="Browser">
 <arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
-<arg>recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new BrowserContext with specified options.</doc>
-<msg timestamp="20210821 22:18:37.693" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false, "recordVideo": {"size": {"width": 1280, "height": 720}, "dir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos"}}</msg>
-<msg timestamp="20210821 22:18:37.732" level="INFO">Successfully created context. </msg>
-<msg timestamp="20210821 22:18:37.732" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False, 'recordVideo': {'size': {'width': 1280, 'height': 720}, 'dir': '/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Videos'}}</msg>
-<status status="PASS" starttime="20210821 22:18:37.691" endtime="20210821 22:18:37.732"/>
+<msg timestamp="20210822 12:43:57.740" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210822 12:43:57.775" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210822 12:43:57.775" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210822 12:43:57.738" endtime="20210822 12:43:57.776"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:37.690" endtime="20210821 22:18:37.732"/>
+<status status="PASS" starttime="20210822 12:43:57.737" endtime="20210822 12:43:57.776"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${url}</arg>
@@ -1659,11 +2221,10 @@ See `Browser, Context and Page` for more information about Browser and related c
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20210821 22:18:40.660" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
-<msg timestamp="20210821 22:18:40.661" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;video width="1280" height="720" controls&gt;&lt;source src="Videos/27d8f4b4b3f93ffc1dde238aac81249a.webm" type="video/webm"&gt;&lt;/video&gt;</msg>
-<status status="PASS" starttime="20210821 22:18:37.732" endtime="20210821 22:18:40.662"/>
+<msg timestamp="20210822 12:44:00.795" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210822 12:43:57.776" endtime="20210822 12:44:00.796"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:37.080" endtime="20210821 22:18:40.662"/>
+<status status="PASS" starttime="20210822 12:43:57.140" endtime="20210822 12:44:00.796"/>
 </kw>
 <kw name="When Validate Title In Home Page" library="home_page_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -1677,27 +2238,36 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:40.709" level="INFO">${title} = conduit</msg>
-<status status="PASS" starttime="20210821 22:18:40.664" endtime="20210821 22:18:40.709"/>
+<msg timestamp="20210822 12:44:00.840" level="INFO">${title} = conduit</msg>
+<status status="PASS" starttime="20210822 12:44:00.798" endtime="20210822 12:44:00.840"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:18:40.711" level="INFO">conduit</msg>
-<status status="PASS" starttime="20210821 22:18:40.709" endtime="20210821 22:18:40.711"/>
+<msg timestamp="20210822 12:44:00.840" level="INFO">conduit</msg>
+<status status="PASS" starttime="20210822 12:44:00.840" endtime="20210822 12:44:00.840"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:40.663" endtime="20210821 22:18:40.711"/>
+<status status="PASS" starttime="20210822 12:44:00.797" endtime="20210822 12:44:00.840"/>
 </kw>
 <kw name="And Open Sign Up Page" library="home_page_keywords">
 <doc>This keyword will click on sign up link in conduit home page</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${sign_up_link}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:44:00.856" level="INFO">Wait for Element with selector: //a[contains(text(),'Sign up')]</msg>
+<status status="PASS" starttime="20210822 12:44:00.841" endtime="20210822 12:44:00.856"/>
+</kw>
 <kw name="Click" library="Browser">
 <arg>selector=${sign_up_link}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:40.712" endtime="20210821 22:18:41.812"/>
+<status status="PASS" starttime="20210822 12:44:00.856" endtime="20210822 12:44:01.959"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:40.712" endtime="20210821 22:18:41.812"/>
+<status status="PASS" starttime="20210822 12:44:00.841" endtime="20210822 12:44:01.960"/>
 </kw>
 <kw name="Then Validate Register Url" library="register_user_keywords">
 <doc>This keyword validates tile of the home page</doc>
@@ -1710,16 +2280,16 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<msg timestamp="20210821 22:18:41.819" level="INFO">${url} = https://qa-task.backbasecloud.com/register</msg>
-<status status="PASS" starttime="20210821 22:18:41.814" endtime="20210821 22:18:41.819"/>
+<msg timestamp="20210822 12:44:01.965" level="INFO">${url} = https://qa-task.backbasecloud.com/register</msg>
+<status status="PASS" starttime="20210822 12:44:01.961" endtime="20210822 12:44:01.965"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>${url}</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20210821 22:18:41.820" level="INFO">https://qa-task.backbasecloud.com/register</msg>
-<status status="PASS" starttime="20210821 22:18:41.819" endtime="20210821 22:18:41.820"/>
+<msg timestamp="20210822 12:44:01.966" level="INFO">https://qa-task.backbasecloud.com/register</msg>
+<status status="PASS" starttime="20210822 12:44:01.965" endtime="20210822 12:44:01.966"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:41.813" endtime="20210821 22:18:41.820"/>
+<status status="PASS" starttime="20210822 12:44:01.960" endtime="20210822 12:44:01.966"/>
 </kw>
 <kw name="And Enter User Name" library="register_user_keywords">
 <arg>${username}</arg>
@@ -1730,10 +2300,10 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:41.823" level="INFO">Fills the text 'newuser1' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:18:41.822" endtime="20210821 22:18:42.855"/>
+<msg timestamp="20210822 12:44:01.968" level="INFO">Fills the text 'newuser12' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:44:01.967" endtime="20210822 12:44:02.997"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:41.821" endtime="20210821 22:18:42.856"/>
+<status status="PASS" starttime="20210822 12:44:01.966" endtime="20210822 12:44:02.997"/>
 </kw>
 <kw name="And Enter Email Id" library="register_user_keywords">
 <arg>${email_id}</arg>
@@ -1744,10 +2314,10 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20210821 22:18:42.859" level="INFO">Fills the text 'newuser1@gmail.com' in the given field.</msg>
-<status status="PASS" starttime="20210821 22:18:42.857" endtime="20210821 22:18:43.924"/>
+<msg timestamp="20210822 12:44:03.000" level="INFO">Fills the text 'newuser12@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:44:02.999" endtime="20210822 12:44:04.035"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:42.856" endtime="20210821 22:18:43.924"/>
+<status status="PASS" starttime="20210822 12:44:02.998" endtime="20210822 12:44:04.036"/>
 </kw>
 <kw name="And Enter Password" library="register_user_keywords">
 <arg>${password}</arg>
@@ -1759,9 +2329,9 @@ Returns a stable identifier for the created page.</doc>
 <tag>Setter</tag>
 <doc>Fills the given secret from ``variable_name`` into the
 text field found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:43.926" endtime="20210821 22:18:45.018"/>
+<status status="PASS" starttime="20210822 12:44:04.038" endtime="20210822 12:44:05.082"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:43.925" endtime="20210821 22:18:45.018"/>
+<status status="PASS" starttime="20210822 12:44:04.037" endtime="20210822 12:44:05.082"/>
 </kw>
 <kw name="Then Click Sign Up Button" library="register_user_keywords">
 <doc>This keyword clicks on the sign up button</doc>
@@ -1770,9 +2340,9 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20210821 22:18:45.020" endtime="20210821 22:18:46.106"/>
+<status status="PASS" starttime="20210822 12:44:05.083" endtime="20210822 12:44:06.132"/>
 </kw>
-<status status="PASS" starttime="20210821 22:18:45.019" endtime="20210821 22:18:46.107"/>
+<status status="PASS" starttime="20210822 12:44:05.083" endtime="20210822 12:44:06.132"/>
 </kw>
 <kw name="And Verify Sign Up" library="register_user_keywords">
 <arg>${username}</arg>
@@ -1785,35 +2355,7 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the current URL.</doc>
-<kw name="Take ScreenShot On Failure" library="common_keywords">
-<doc>This Keyword will take the screenshot when the test fails</doc>
-<kw name="Get Current Date" library="DateTime">
-<var>${time_stamp}</var>
-<arg>exclude_millis=True</arg>
-<doc>Returns current local or UTC time with an optional increment.</doc>
-<msg timestamp="20210821 22:18:47.124" level="INFO">${time_stamp} = 2021-08-21 22:18:47</msg>
-<status status="PASS" starttime="20210821 22:18:47.118" endtime="20210821 22:18:47.124"/>
-</kw>
-<kw name="Replace String Using Regexp" library="String">
-<var>${test_name}</var>
-<arg>${TEST NAME}</arg>
-<arg>\\s</arg>
-<arg>-</arg>
-<doc>Replaces ``pattern`` in the given ``string`` with ``replace_with``.</doc>
-<msg timestamp="20210821 22:18:47.125" level="INFO">${test_name} = Register-A-User</msg>
-<status status="PASS" starttime="20210821 22:18:47.124" endtime="20210821 22:18:47.126"/>
-</kw>
-<kw name="Take Screenshot" library="Browser">
-<arg>filename=${OUTPUTDIR}/Screenshots/${test_name}-${time_stamp}.png</arg>
-<tag>PageContent</tag>
-<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20210821 22:18:47.332" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Screenshots/Register-A-User-2021-08-21%2022%3A18%3A47.png"&gt;&lt;img src="Screenshots/Register-A-User-2021-08-21%2022%3A18%3A47.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20210821 22:18:47.126" endtime="20210821 22:18:47.332"/>
-</kw>
-<status status="PASS" starttime="20210821 22:18:47.117" endtime="20210821 22:18:47.332"/>
-</kw>
-<msg timestamp="20210821 22:18:47.351" level="FAIL">An Error Occurred!. Email/Username already exists</msg>
-<status status="FAIL" starttime="20210821 22:18:46.109" endtime="20210821 22:18:47.351"/>
+<status status="PASS" starttime="20210822 12:44:06.134" endtime="20210822 12:44:06.139"/>
 </kw>
 <kw name="Catenate" library="BuiltIn">
 <var>${user_xpath}</var>
@@ -1821,7 +2363,8 @@ text field found by ``selector``.</doc>
 <arg>${signed_up_username}</arg>
 <arg>${username}']</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="NOT RUN" starttime="20210821 22:18:47.352" endtime="20210821 22:18:47.352"/>
+<msg timestamp="20210822 12:44:06.140" level="INFO">${user_xpath} = //a[@href='/profile/newuser12']</msg>
+<status status="PASS" starttime="20210822 12:44:06.139" endtime="20210822 12:44:06.140"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>selector=${user_xpath}</arg>
@@ -1829,7 +2372,8 @@ text field found by ``selector``.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="NOT RUN" starttime="20210821 22:18:47.352" endtime="20210821 22:18:47.352"/>
+<msg timestamp="20210822 12:44:06.153" level="INFO">Wait for Element with selector: //a[@href='/profile/newuser12']</msg>
+<status status="PASS" starttime="20210822 12:44:06.140" endtime="20210822 12:44:06.153"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <var>${output}</var>
@@ -1841,36 +2385,314 @@ text field found by ``selector``.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" starttime="20210821 22:18:47.353" endtime="20210821 22:18:47.353"/>
+<msg timestamp="20210822 12:44:06.176" level="INFO">${output} = newuser12</msg>
+<status status="PASS" starttime="20210822 12:44:06.153" endtime="20210822 12:44:06.176"/>
 </kw>
-<status status="FAIL" starttime="20210821 22:18:46.107" endtime="20210821 22:18:47.353"/>
+<status status="PASS" starttime="20210822 12:44:06.133" endtime="20210822 12:44:06.177"/>
 </kw>
 <doc>This test case login using basic authentication and validates Home Page</doc>
 <tag>FEATURE-ARTICLES</tag>
 <tag>REGISTER_USER</tag>
-<status status="FAIL" starttime="20210821 22:18:37.077" endtime="20210821 22:18:47.354">An Error Occurred!. Email/Username already exists</status>
+<status status="PASS" starttime="20210822 12:43:57.135" endtime="20210822 12:44:06.177"/>
 </test>
-<status status="FAIL" starttime="20210821 22:18:37.063" endtime="20210821 22:18:48.059"/>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<arg>ALL</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser. Activated browser is set to first active browser.
+Closes all context and pages belonging to this browser.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 12:44:06.582" level="INFO">Closed all browsers</msg>
+<status status="PASS" starttime="20210822 12:44:06.250" endtime="20210822 12:44:06.582"/>
+</kw>
+<status status="PASS" starttime="20210822 12:43:57.102" endtime="20210822 12:44:06.582"/>
 </suite>
-<status status="FAIL" starttime="20210821 22:17:34.226" endtime="20210821 22:18:48.062"/>
+<suite id="s1-s5" name="Settings Test" source="/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/Tests/settings_test.robot">
+<test id="s1-s5-t1" name="Validate Settings Page">
+<kw name="Given I Open '${site_url}' in '${browser}' Browser" library="common_keywords" sourcename="I Open '${url}' in '${browser}' Browser">
+<doc>This keyword opens given url in the browser of the choice.</doc>
+<kw name="New Browser" library="Browser">
+<arg>browser=${browser}</arg>
+<arg>headless=${headless_driver}</arg>
+<arg>slowMo=1s</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 12:44:06.625" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/6a5ace1d-e19f-4893-b4b6-78309e6a1916"}</msg>
+<msg timestamp="20210822 12:44:07.162" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"/Users/anujteotia/Desktop/assignment-rf-selenium-pom/assignment-rf-selenium-pom/browser/traces/6a5ace1d-e19f-4893-b4b6-78309e6a1916"}</msg>
+<status status="PASS" starttime="20210822 12:44:06.623" endtime="20210822 12:44:07.162"/>
+</kw>
+<kw name="Set Browser Timeout" library="Browser">
+<arg>${browser_timeout}</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<msg timestamp="20210822 12:44:07.197" level="INFO">No context open.</msg>
+<status status="PASS" starttime="20210822 12:44:07.163" endtime="20210822 12:44:07.197"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${record_video}</arg>
+<arg>New Context</arg>
+<arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
+<arg>recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}</arg>
+<arg>ELSE</arg>
+<arg>New Context</arg>
+<arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="New Context" library="Browser">
+<arg>httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20210822 12:44:07.200" level="INFO">{"acceptDownloads": false, "ignoreHTTPSErrors": false, "bypassCSP": false, "deviceScaleFactor": 1.0, "isMobile": false, "hasTouch": false, "javaScriptEnabled": true, "offline": false, "httpCredentials": "XXX", "hideRfBrowser": false}</msg>
+<msg timestamp="20210822 12:44:07.252" level="INFO">Successfully created context. </msg>
+<msg timestamp="20210822 12:44:07.252" level="INFO">{'acceptDownloads': False, 'ignoreHTTPSErrors': False, 'bypassCSP': False, 'deviceScaleFactor': 1, 'isMobile': False, 'hasTouch': False, 'javaScriptEnabled': True, 'offline': False, 'httpCredentials': 'XXX', 'hideRfBrowser': False}</msg>
+<status status="PASS" starttime="20210822 12:44:07.198" endtime="20210822 12:44:07.252"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:07.197" endtime="20210822 12:44:07.252"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20210822 12:44:10.309" level="INFO">Successfully initialized new page object and opened url: https://qa-task.backbasecloud.com</msg>
+<status status="PASS" starttime="20210822 12:44:07.253" endtime="20210822 12:44:10.309"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:06.623" endtime="20210822 12:44:10.310"/>
+</kw>
+<kw name="And Validate Title In Home Page" library="home_page_keywords">
+<doc>This keyword validates tile of the home page</doc>
+<kw name="Get Text" library="Browser">
+<var>${title}</var>
+<arg>selector=${conduit_txt}</arg>
+<arg>assertion_operator=should be</arg>
+<arg>assertion_expected=conduit</arg>
+<arg>message=Unable to open Conduit homepage.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210822 12:44:10.358" level="INFO">${title} = conduit</msg>
+<status status="PASS" starttime="20210822 12:44:10.311" endtime="20210822 12:44:10.358"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20210822 12:44:10.358" level="INFO">conduit</msg>
+<status status="PASS" starttime="20210822 12:44:10.358" endtime="20210822 12:44:10.358"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:10.310" endtime="20210822 12:44:10.359"/>
+</kw>
+<kw name="When Open Sign In Page" library="home_page_keywords">
+<doc>This keyword will click on sign In link in conduit home page</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${sign_in_link}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:44:10.373" level="INFO">Wait for Element with selector: //a[contains(text(),'Sign in')]</msg>
+<status status="PASS" starttime="20210822 12:44:10.359" endtime="20210822 12:44:10.373"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>selector=${sign_in_link}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:44:10.373" endtime="20210822 12:44:11.476"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:10.359" endtime="20210822 12:44:11.477"/>
+</kw>
+<kw name="Then Validate Login Url" library="login_user_keywords">
+<doc>This keyword validates tile of the home page</doc>
+<kw name="Get Url" library="Browser">
+<var>${login_url}</var>
+<arg>assertion_operator=should end with</arg>
+<arg>assertion_expected=login</arg>
+<arg>message=Unable to open login page.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<msg timestamp="20210822 12:44:11.482" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:44:11.478" endtime="20210822 12:44:11.482"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${login_url}</arg>
+<arg>${login_url}</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20210822 12:44:11.483" level="INFO">${login_url} = https://qa-task.backbasecloud.com/login</msg>
+<status status="PASS" starttime="20210822 12:44:11.483" endtime="20210822 12:44:11.484"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:11.477" endtime="20210822 12:44:11.484"/>
+</kw>
+<kw name="And Enter Sign In Email Id" library="login_user_keywords">
+<arg>${email_id}</arg>
+<doc>This keyword enter email id for sign in</doc>
+<kw name="Fill Text" library="Browser">
+<arg>selector=${sign_in_email_txt_box}</arg>
+<arg>txt=${email_id}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20210822 12:44:11.487" level="INFO">Fills the text 'candidatex@gmail.com' in the given field.</msg>
+<status status="PASS" starttime="20210822 12:44:11.485" endtime="20210822 12:44:12.513"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:11.484" endtime="20210822 12:44:12.513"/>
+</kw>
+<kw name="And Enter Sign In Password" library="login_user_keywords">
+<arg>${password}</arg>
+<doc>This keyword enter password for sign in</doc>
+<kw name="Fill Secret" library="Browser">
+<arg>selector=${sign_in_pwd_txt_box}</arg>
+<arg>secret=$password</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Fills the given secret from ``variable_name`` into the
+text field found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:44:12.515" endtime="20210822 12:44:13.554"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:12.514" endtime="20210822 12:44:13.554"/>
+</kw>
+<kw name="Then Click Sign In Button" library="login_user_keywords">
+<doc>This keyword clicks on the sign in button</doc>
+<kw name="Click" library="Browser">
+<arg>selector=${sign_in_btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:44:13.556" endtime="20210822 12:44:14.619"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:13.555" endtime="20210822 12:44:14.620"/>
+</kw>
+<kw name="And Verify Signed In" library="login_user_keywords">
+<doc>This keyword verifies whether sign in is successfull or not</doc>
+<kw name="Get Url" library="Browser">
+<arg>assertion_operator=should be</arg>
+<arg>assertion_expected=${site_url}/</arg>
+<arg>message=An Error Occurred!. Email or password is invalid.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20210822 12:44:14.621" endtime="20210822 12:44:14.624"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${new_article_txt}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:44:14.637" level="INFO">Wait for Element with selector: //a[@href='/editor']</msg>
+<status status="PASS" starttime="20210822 12:44:14.625" endtime="20210822 12:44:14.638"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${art_txt}</var>
+<arg>selector=${new_article_txt}</arg>
+<arg>assertion_operator=contains</arg>
+<arg>assertion_expected=New Article</arg>
+<arg>message=Sign In was unsuccessful</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20210822 12:44:14.660" level="INFO">${art_txt} =  New Article</msg>
+<status status="PASS" starttime="20210822 12:44:14.638" endtime="20210822 12:44:14.660"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:14.620" endtime="20210822 12:44:14.661"/>
+</kw>
+<kw name="Then Open Settings Page" library="home_page_keywords">
+<doc>This keyword will open Settings page from home page</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>selector=${settings_txt_link}</arg>
+<arg>state=visible</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20210822 12:44:14.672" level="INFO">Wait for Element with selector: //a[@href='/settings']</msg>
+<status status="PASS" starttime="20210822 12:44:14.661" endtime="20210822 12:44:14.672"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>selector=${settings_txt_link}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:44:14.672" endtime="20210822 12:44:15.735"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:14.661" endtime="20210822 12:44:15.735"/>
+</kw>
+<kw name="And Validate Settings Page Url" library="settings_keywords">
+<doc>This keyword validates the url of settings page</doc>
+<kw name="Get Url" library="Browser">
+<arg>assertion_operator=should end with</arg>
+<arg>assertion_expected=settings</arg>
+<arg>message=Unable to open settings page.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" starttime="20210822 12:44:15.737" endtime="20210822 12:44:15.741"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:15.736" endtime="20210822 12:44:15.741"/>
+</kw>
+<kw name="And Validate Settings Title" library="settings_keywords">
+<doc>This keyword validates title of the Settings page</doc>
+<kw name="Get Text" library="Browser">
+<arg>selector=${settings_title_txt}</arg>
+<arg>assertion_operator=should be</arg>
+<arg>assertion_expected=Your Settings</arg>
+<arg>message=Unable to open Settings Page.</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20210822 12:44:15.742" endtime="20210822 12:44:15.765"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:15.741" endtime="20210822 12:44:15.765"/>
+</kw>
+<doc>This test case login using basic authentication and validates Home Page</doc>
+<tag>FEATURE-ARTICLES</tag>
+<tag>SETTINGS</tag>
+<status status="PASS" starttime="20210822 12:44:06.618" endtime="20210822 12:44:15.765"/>
+</test>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<arg>ALL</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser. Activated browser is set to first active browser.
+Closes all context and pages belonging to this browser.
+See `Browser, Context and Page` for more information about Browser and related concepts.</doc>
+<msg timestamp="20210822 12:44:16.196" level="INFO">Closed all browsers</msg>
+<status status="PASS" starttime="20210822 12:44:15.848" endtime="20210822 12:44:16.197"/>
+</kw>
+<status status="PASS" starttime="20210822 12:44:06.588" endtime="20210822 12:44:16.197"/>
+</suite>
+<status status="PASS" starttime="20210822 12:42:43.154" endtime="20210822 12:44:16.207"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="1" skip="0">All Tests</stat>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="3" fail="0" skip="0">ARTICLES</stat>
-<stat pass="5" fail="1" skip="0">FEATURE-ARTICLES</stat>
+<stat pass="4" fail="0" skip="0">ARTICLES</stat>
+<stat pass="8" fail="0" skip="0">FEATURE-ARTICLES</stat>
 <stat pass="1" fail="0" skip="0">HOME_PAGE</stat>
 <stat pass="1" fail="0" skip="0">LOGIN_USER</stat>
-<stat pass="0" fail="1" skip="0">REGISTER_USER</stat>
+<stat pass="1" fail="0" skip="0">REGISTER_USER</stat>
+<stat pass="1" fail="0" skip="0">SETTINGS</stat>
+<stat pass="1" fail="0" skip="0">TESTING</stat>
 </tag>
 <suite>
-<stat pass="5" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s1" name="Article Test">Tests.Article Test</stat>
+<stat pass="8" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="Article Test">Tests.Article Test</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s2" name="Home Page Test">Tests.Home Page Test</stat>
 <stat pass="1" fail="0" skip="0" id="s1-s3" name="Login User Test">Tests.Login User Test</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s4" name="Register User Test">Tests.Register User Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s4" name="Register User Test">Tests.Register User Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s5" name="Settings Test">Tests.Settings Test</stat>
 </suite>
 </statistics>
 <errors>

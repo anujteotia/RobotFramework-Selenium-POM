@@ -1,6 +1,6 @@
 *** Settings ***
-Library    Browser
 Library    String
+Library    Collections
 Variables   ${OUTPUTDIR}/Pages/locators.py
 
 *** Keywords ***
@@ -112,4 +112,24 @@ Check Number Of Articles After Deletion
     ${count_after_del}   Evaluate   ${article_count}-1
     ${article_count_After_del}   Browser.Get Element Count   selector=${articles_list}   assertion_operator=equal
     ...   expected_value=${count_after_del}   message=Unable to delete the Articles.
+
+Navigate To Other Author's Article
+    [Documentation]   This keyword navigates to the article from other user
+    FOR  ${index}   IN RANGE   1  11
+       ${author}   Catenate   SEPARATOR=   ${author_name_global_feed}   ${index}]
+       ${author_txt}   Browser.Get Text   selector=${author}
+       ${art_preview}   Catenate   SEPARATOR=   ${article_preview_span}   ${index}]
+       Run Keyword If   '${author_txt}'!='${username}'   Run Keywords   Hover   selector=${art_preview}   AND   Browser.Click  selector=${art_preview}
+       Exit For Loop If   '${author_txt}'!='${username}'
+    END
+
+Validate Delete Article Option Is Not Available
+    [Documentation]   This keyword validates that delete article option is not available for other users
+    Browser.Get Url   assertion_operator=contains  assertion_expected=article/   message=Navigation unsuccessful to article
+    Browser.Get Text   selector=${follow_user_txt}  assertion_operator=contains  assertion_expected=Follow
+    ...   message=Follow User button is not present
+    Browser.Get Element State   selector=${delete_article_txt_link}  state=visible   assertion_operator=should be   assertion_expected=None
+    ...   message=Other user can also delete the article
+
+
 

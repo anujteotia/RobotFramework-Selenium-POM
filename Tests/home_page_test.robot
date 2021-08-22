@@ -1,6 +1,7 @@
 *** Settings ***
-Resource        ./settings.robot
-Force Tags      HOME_PAGE
+Resource            ./settings.robot
+Suite Teardown      Close Browser   ALL
+Force Tags          HOME_PAGE
 
 *** Test Cases ***
 Validate Home Page

@@ -27,11 +27,28 @@ Validate Pagination On Home Page
 
 Open Sign Up Page
     [Documentation]   This keyword will click on sign up link in conduit home page
+    Wait For Elements State   selector=${sign_up_link}   state=visible
     Browser.Click   selector=${sign_up_link}
 
 Open Sign In Page
     [Documentation]   This keyword will click on sign In link in conduit home page
+    Wait For Elements State   selector=${sign_in_link}   state=visible
     Browser.Click   selector=${sign_in_link}
+
+Open Settings Page
+    [Documentation]   This keyword will open Settings page from home page
+    Wait For Elements State   selector=${settings_txt_link}   state=visible
+    Browser.Click   selector=${settings_txt_link}
+
+Click On Global Feed
+    [Documentation]   This keyword clicks on global feed text
+    Wait For Elements State   selector=${global_feed_txt}   state=visible
+    Browser.Click   selector=${global_feed_txt}
+
+Get Signed In User Name
+    [Documentation]   This keyword fetches the name of the user
+    ${username}   Browser.Get Text  selector=${username_user_profile_txt}
+    Set Test Variable   ${username}   ${username}
 
 
 
