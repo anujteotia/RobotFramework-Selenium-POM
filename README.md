@@ -24,7 +24,7 @@ and `pip install requests`
 * `Videos` directory is to store the execution video captured by the framework. This can toggeled from `locators.py` file by changing `record_video` parameter to `True/False`
 
 ### Highlights
-**Supported Browsers: 
+* Supported Browsers: 
 
 Browsers can be switched by changing the value of `browser` parameter under `common properties` section of `Pages/locators.py` file
 >chromium	- Google Chrome, Microsoft Edge (since 2020), Opera
@@ -33,6 +33,6 @@ Browsers can be switched by changing the value of `browser` parameter under `com
 
 >webkit	- Apple Safari, Mail, AppStore on MacOS and iOS
 
-**Screenshots
+** Screenshots
 
 
