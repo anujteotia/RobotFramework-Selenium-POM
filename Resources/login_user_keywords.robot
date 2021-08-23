@@ -70,3 +70,11 @@ Validate Current User
     Dictionary Should Contain Key   dictionary=${current_user['user']}   key=email   msg=email is not present
     Dictionary Should Contain Key   dictionary=${current_user['user']}   key=username   msg=username is not present
     Dictionary Should Contain Key   dictionary=${current_user['user']}   key=token   msg=jwt token is not present
+
+Update Existing User
+    [Documentation]   This keyword updates the existing user details
+    [Arguments]   ${email}  ${password}  ${bio}  ${image}  ${auth_user}  ${auth_pwd}
+    ${updated_user}   Update User   ${email}  ${password}  ${bio}  ${image}  ${auth_user}  ${auth_pwd}
+    Should Not Be Empty   ${updated_user}   msg=Unable to Update the User successfully
+
+
