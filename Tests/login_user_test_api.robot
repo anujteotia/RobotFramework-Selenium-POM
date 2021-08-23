@@ -22,6 +22,6 @@ Get Current Signed In User
     Get Current Active User   ${login_emailId}  ${login_pwd}  ${auth_user}  ${auth_pwd}
     Validate Current User
 
-Update The Deatils Of Existing User
-    [Documentation]   This keyword will update the existing User
-    Update Existing User   ${login_emailId}  ${login_pwd}  ${bio}  ${image}  ${auth_user}  ${auth_pwd}
+#Update The Details Of Existing User
+#    [Documentation]   This keyword will update the existing User
+#    Update Existing User   ${login_emailId}  ${login_pwd}  ${bio}  ${image}  ${auth_user}  ${auth_pwd}

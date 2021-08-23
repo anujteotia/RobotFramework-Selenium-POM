@@ -10,7 +10,7 @@ set_selenium_speed = "0.5s"
 auth_user = "candidatex"
 auth_pwd = "qa-is-cool"
 login_pwd = "qa-is-cool"
-login_emailId = "newuser11@gmail.com"
+login_emailId = "qatestuser@gmail.com"
 
 # Home Page
 site_url = "https://qa-task.backbasecloud.com"
