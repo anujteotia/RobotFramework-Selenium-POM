@@ -49,13 +49,13 @@ This framework has capability to record the video of automated test case executi
 
 Execution can easily be switched to headless by changing the value of `headless_driver` parameter in `Pages/locators.py` file.
 
-##Jenkins Job
+## Jenkins Job
 
 Jenkins jobs are created on both windows and macOS and are exported to the project root directory by the name of `jenkins_job_windows.xml` and `jenkins_job_mac.xml` respectively.
 
 Follow the below steps to import the jenkins job:
 
-###prerequisites: 
+### prerequisites: 
 Jenkins with `Nodejs` and `Robot Framework` plugins installed & Access token authenticated git access. 
 
 * Open Jenkins Cli from Jenkins > Manage Jenkins > Jenkins CLI
@@ -72,7 +72,7 @@ java -jar jenkins-cli.jar -s <your server url> -auth username:password get-job <
 > If multiple versions of python are installed on your system please replace `python` with `python3` in all instances. And If you ahve only one version then keep `python` instead `python3` at all instances. 
 
 * Navigate to job and select Build now.
-## How To Execute Test Cases
+## How To Execute Test Cases - Locally
 
 ```
 git clone https://github.com/anujteotia/assignment-rf-selenium-pom.git
