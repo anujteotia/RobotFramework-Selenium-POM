@@ -10,7 +10,7 @@ pipeline {
     
 	    stage('Run Robot Tests') {
 	      steps {
-		        	sh 'python3 -m robot.run --NoStatusRC Tests/'
+		        	sh 'python3 -m robot --NoStatusRC Tests/'
 		        	sh 'exit 0'
 	      		}
 	      post {
