@@ -69,7 +69,7 @@ java -jar jenkins-cli.jar -s <your server url> -auth username:password get-job <
     * Install and configure NodeJs plugin (Refer screenshot `Jenkins_nodejs_job_conf.png` in project root directory)
     * Configure robot framework plugin in post build actions (Refer screenshot `robot_plugin.png` in project root directory)
 
-> If multiple versions of python are installed on your system please replace `python` with `python3` in all instances. And If you ahve only one version then keep `python` instead `python3` at all instances. 
+> If multiple versions of python are installed on your system please replace `python` with `python3` in all instances. And If you have only one version of python then keep `python` instead `python3` at all instances. 
 
 * Navigate to job and select Build now.
 ## How To Execute Test Cases - Locally
