@@ -1,5 +1,8 @@
 pipeline {
   agent any
+  environment{
+    setenv PATH "${PATH}:/usr/local/bi
+  }
   
   stages {
 	    stage('initialize') {
