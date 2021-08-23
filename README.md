@@ -24,15 +24,16 @@ and `pip install requests`
 * `Videos` directory is to store the execution video captured by the framework. This can toggeled from `locators.py` file by changing `record_video` parameter to `True/False`
 
 ### Highlights
-* Supported Browsers: 
+* Supported Browsers 
 
 Browsers can be switched by changing the value of `browser` parameter under `common properties` section of `Pages/locators.py` file
-```chromium	- Google Chrome, Microsoft Edge (since 2020), Opera
+```
+chromium	- Google Chrome, Microsoft Edge (since 2020), Opera
 firefox	- Mozilla Firefox
 webkit	- Apple Safari, Mail, AppStore on MacOS and iOS
 ```
 
-* Screenshots: 
+* Screenshots 
 
 In case of test case failure, a screenshot will be captured of the current screen and stored in `Screenshots` directory. Nomenclature followed: TEST-CASE-NAME-TIME-STAMP.png
 
@@ -52,7 +53,14 @@ Execution can easily be switched to headless by changing the value of `headless_
 ## How To Execute Test Cases
 
 ```
-git clone https://github.com/anujteotia/SeleniumPOMExtentReport.git
+git clone https://github.com/anujteotia/assignment-rf-selenium-pom.git
 cd into/project_root_directory
 robot Tests/
 ```
+* Only API test cases can also be executed by running `robot -i API_TEST Tests/` command from project root directory
+* Same way only GUI test cases can also be executed by running `robot -i GUI_TEST Tests/` command from project root directory
+
+> After every execution a test report and log file will be generated under project root directory by the name of `report.html` & `log.html`
+
+
+#                                                          THE END
