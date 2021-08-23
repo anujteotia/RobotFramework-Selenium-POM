@@ -2,11 +2,7 @@
 browser = "chromium"
 headless_driver = "False"
 record_video = False
-win_chrome_driver_exe = "${OUTPUTDIR}/WebDrivers/chromedriver.exe"
-mac_chrome_driver_exe = "${OUTPUTDIR}/WebDrivers/chromedriver"
 browser_timeout = "10s"
-sleep_time = "5s"
-set_selenium_speed = "0.5s"
 auth_user = "candidatex"
 auth_pwd = "qa-is-cool"
 login_pwd = "qa-is-cool"

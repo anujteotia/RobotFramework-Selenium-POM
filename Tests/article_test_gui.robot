@@ -80,7 +80,6 @@ Delete Existing Article
 
 Delete Article Button Not Shown To Other Author
     [Documentation]   This test case checks Delete Article button shown to article's author
-    [Tags]   TESTING
     Given I Open '${site_url}' in '${browser}' Browser
     And Validate Title In Home Page
     When Open Sign In Page
