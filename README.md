@@ -15,12 +15,12 @@ and `pip install requests`
 
 ## Framework Functionalities And Other Information
 
-* All the test cases are under `Tests/` directory
-* All supporting Keywords are under `Resources` directory
+* `Tests/` directory contains all the test cases for GUI and API
+* `Resources` directory contains all supporting Keywords.
 * `Pages` directory contains a python file which contains configurations & all the xpaths required to navigate on GUI
-* All the custom functions are present under `Libraries` directory
+* `Libraries` directory holds all the custom python libraries mainly for API automation
 * `Manual Test Report` directory contains an excel file with Test cases, test case execution status and test evaluation report with suggestions, improvement ideas and bugs
-* `Screenshots` directory will hold the screenshots in case of GUI test case failure. Failure screenshots will be named TEST_CASE_NAME-TIMESTAMP.png
+* `Screenshots` directory will hold the screenshots in case of GUI test case failure. Failure screenshots will be named TEST-CASE-NAME-TIME-STAMP.png
 * `Videos` directory is to store the execution video captured by the framework. This can toggeled from `locators.py` file by changing `record_video` parameter to `True/False`
 
 ### Highlights
