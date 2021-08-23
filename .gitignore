@@ -3,6 +3,6 @@
 **traces
 **.html
 playwright-log.txt
-**.xml
+output.xml
 **.png
 **.webm
