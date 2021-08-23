@@ -84,5 +84,4 @@ robot Tests/
 
 > After every execution a test report and log file will be generated under project root directory by the name of `report.html` & `log.html`
 
-
-<h1 align="center">THE END</h1>                                                
+ 
