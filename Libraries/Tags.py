@@ -24,8 +24,3 @@ class Tags(object):
         if response.status_code != 200:
             raise HTTPError(response.status_code, response.content)
         return response.json()
-
-
-if __name__ == '__main__':
-    obj = Tags()
-    #print(obj.get_tags('candidatex', 'qa-is-cool'))

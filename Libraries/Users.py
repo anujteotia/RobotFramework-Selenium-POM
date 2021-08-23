@@ -118,10 +118,3 @@ class Users(object):
         return response.json()
     
         
-if __name__ == '__main__':
-    obj = Users()
-    # print(obj.user_auth('newuser11@gmail.com', 'qa-is-cool', 'candidatex', 'qa-is-cool'))
-    # print(obj.user_registration('candidatex17', 'candidatex17@gmail.com', 'qa-is-cool', 'candidatex', 'qa-is-cool'))
-    # print(obj.get_current_user('newuser11@gmail.com', 'qa-is-cool', 'candidatex', 'qa-is-cool'))
-    # print(obj.update_user('newuser11@gmail.com', 'qa-is-cool', 'Automation Engineer', 'image_url', 'candidatex', 'qa-is-cool'))
-        

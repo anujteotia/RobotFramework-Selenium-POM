@@ -63,9 +63,4 @@ class Articles(object):
             raise HTTPError(response.status_code, response.content)
         return response.json()
 
-
-if __name__ == '__main__':
-    obj = Articles()
-    #print(obj.list_articles(10, 'candidatex', 'qa-is-cool'))
-    #print(obj.create_article('new', 'new article', 'article created', 'newArt', 'newuser11@gmail.com', 'qa-is-cool', 'candidatex', 'qa-is-cool'))
     
