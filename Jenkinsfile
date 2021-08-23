@@ -1,9 +1,6 @@
 pipeline {
   agent any
-  environment{
-    setenv PATH "${PATH}:/usr/local/bin"
-  }
-  
+  setenv PATH "${PATH}:/usr/local/bin"
   stages {
 	    stage('initialize') {
 	      steps {
