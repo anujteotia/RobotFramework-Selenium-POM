@@ -3,13 +3,15 @@ pipeline {
   
   stages {
 	    stage('Run Robot Tests') {
-	      steps {		
+	      steps {
+		      withEnv(["HOME=${env.WORKSPACE}"]){
 		      	sh 'pip3 install requests'
 	                sh 'pip3 install robotframework-broser'
 	                sh 'rfbrowser init'
 		        sh 'python -m robot --NoStatusRC Tests/'
 		        sh 'exit 0'
-	      		}
+	      	}
+	      }
 	      post {
         	always {
 		        script {
