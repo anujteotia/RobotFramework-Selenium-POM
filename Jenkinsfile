@@ -2,16 +2,13 @@ pipeline {
   agent any
   
   stages {
-	    stage('initialize') {
-	      steps {
-	        sh "echo PATH= ${env.PATH}"
-	      }
-	    }
-    
 	    stage('Run Robot Tests') {
-	      steps {
-		        	sh 'python -m robot --NoStatusRC Tests/'
-		        	sh 'exit 0'
+	      steps {		
+		      	sh 'pip install requests'
+	                sh 'pip install robotframework-broser'
+	                sh 'rfbrowser init'
+		        sh 'python -m robot --NoStatusRC Tests/'
+		        sh 'exit 0'
 	      		}
 	      post {
         	always {
