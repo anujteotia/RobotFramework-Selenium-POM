@@ -4,8 +4,8 @@ pipeline {
   stages {
 	    stage('Run Robot Tests') {
 	      steps {		
-		      	sh 'pip install requests'
-	                sh 'pip install robotframework-broser'
+		      	sh 'pip3 install requests'
+	                sh 'pip3 install robotframework-broser'
 	                sh 'rfbrowser init'
 		        sh 'python -m robot --NoStatusRC Tests/'
 		        sh 'exit 0'
