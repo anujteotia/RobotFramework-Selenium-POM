@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment{
-    setenv PATH "${PATH}:/usr/local/bi
+    setenv PATH "${PATH}:/usr/local/bin"
   }
   
   stages {
