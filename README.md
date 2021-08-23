@@ -55,7 +55,7 @@ Jenkins jobs are created on both windows and macOS and are exported to the proje
 
 Follow the below steps to import the jenkins job:
 
-### prerequisites: 
+### Prerequisites: 
 Jenkins with `Nodejs` and `Robot Framework` plugins installed & Access token authenticated git access. 
 
 * Open Jenkins Cli from Jenkins > Manage Jenkins > Jenkins CLI
