@@ -9,8 +9,10 @@ I Open '${url}' in '${browser}' Browser
     [Documentation]  This keyword opens given url in the browser of the choice.
     New Browser   browser=${browser}   headless=${headless_driver}   slowMo=1s
     Set Browser Timeout    ${browser_timeout}
-    Run Keyword If   ${record_video}   New Context   httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}   recordVideo={"size": {"width": 1280, "height": 720}, "dir": "${OUTPUTDIR}/Videos"}
-    ...   ELSE   New Context   httpCredentials={'username': '$basic_auth_user', 'password': '$basic_auth_pwd'}
+    &{httpCredentials}   Create Dictionary   username=$basic_auth_user   password=$basic_auth_pwd
+    &{record_video}   Create Dictionary   dir=${OUTPUTDIR}/Videos
+    Run Keyword If   ${record_video}   New Context   httpCredentials=${httpCredentials}   recordVideo=${record_video}
+    ...   ELSE   New Context   httpCredentials=${httpCredentials}
     New Page   ${url}
 
 Take ScreenShot On Failure

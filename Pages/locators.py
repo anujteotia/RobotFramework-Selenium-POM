@@ -1,6 +1,6 @@
 # common properties
 browser = "chromium"
-headless_driver = "False"
+headless_driver = False
 record_video = False
 browser_timeout = "10s"
 auth_user = "candidatex"

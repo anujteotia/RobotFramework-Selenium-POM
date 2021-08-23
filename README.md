@@ -9,7 +9,7 @@ Only Python 3.7 or newer is supported.
 * Update pip `pip install -U pip` to ensure latest version is used
 * Install robotframework-browser and python requests from the commandline: `pip install robotframework-browser`
 and `pip install requests`
-* Install the node dependencies: run `rfbrowser init` in your shell
+* Install the node dependencies: run `rfbrowser init`
 
 >if `rfbrowser` gives error, try `python -m Browser.entry init`
 
@@ -28,7 +28,7 @@ and `pip install requests`
 
 Browsers can be switched by changing the value of `browser` parameter under `common properties` section of `Pages/locators.py` file
 ```
-chromium	- Google Chrome, Microsoft Edge (since 2020), Opera
+chromium - Google Chrome, Microsoft Edge (since 2020), Opera
 firefox	- Mozilla Firefox
 webkit	- Apple Safari, Mail, AppStore on MacOS and iOS
 ```
@@ -63,4 +63,4 @@ robot Tests/
 > After every execution a test report and log file will be generated under project root directory by the name of `report.html` & `log.html`
 
 
-#                                                          THE END
+<h1 align="center">THE END</h1>                                                
