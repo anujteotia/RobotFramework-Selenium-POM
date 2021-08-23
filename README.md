@@ -27,12 +27,32 @@ and `pip install requests`
 * Supported Browsers: 
 
 Browsers can be switched by changing the value of `browser` parameter under `common properties` section of `Pages/locators.py` file
->chromium	- Google Chrome, Microsoft Edge (since 2020), Opera
+```chromium	- Google Chrome, Microsoft Edge (since 2020), Opera
+firefox	- Mozilla Firefox
+webkit	- Apple Safari, Mail, AppStore on MacOS and iOS
+```
 
->firefox	- Mozilla Firefox
+* Screenshots: 
 
->webkit	- Apple Safari, Mail, AppStore on MacOS and iOS
+In case of test case failure, a screenshot will be captured of the current screen and stored in `Screenshots` directory. Nomenclature followed: TEST-CASE-NAME-TIME-STAMP.png
 
-** Screenshots
+* Automatic Test Report
+
+An automatic test report will be generated after every test run. Report and Log file can be found in project root directory by the name of `report.html` & `log.html`
+
+* Record Video
+
+This framework has capability to record the video of automated test case execution by toggeling `record_video` parameter of `Pages/locators.py` file. False: No video will be captured, True: Video will be captured for every test executed and will be stored in `Videos` directory.
+
+* Headless Execution
+
+Execution can easily be switched to headless by changing the value of `headless_driver` parameter in `Pages/locators.py` file.
 
 
+## How To Execute Test Cases
+
+```
+git clone https://github.com/anujteotia/SeleniumPOMExtentReport.git
+cd into/project_root_directory
+robot Tests/
+```
