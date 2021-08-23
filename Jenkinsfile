@@ -4,13 +4,13 @@ pipeline {
   stages {
 	    stage('initialize') {
 	      steps {
-	        sh 'echo "PATH= ${PATH}'
+	        sh "echo PATH= ${PATH}"
 	      }
 	    }
     
 	    stage('Run Robot Tests') {
 	      steps {
-		        	sh 'python3 -m robot.run --NoStatusRC Tests/'
+		        	sh 'python3 -m robot --NoStatusRC Tests/'
 		        	sh 'exit 0'
 	      		}
 	      post {
