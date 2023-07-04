@@ -1,12 +1,12 @@
 backports.cached-property==1.0.1
-certifi==2021.5.30
+certifi>=2022.12.07
 charset-normalizer==2.0.4
 grpcio==1.39.0
 grpcio-tools==1.39.0
 idna==3.2
 overrides==6.1.0
-protobuf==3.17.3
-requests==2.26.0
+protobuf>=3.18.3
+requests>=2.31.0
 robotframework==4.1
 robotframework-assertion-engine==0.2.0
 robotframework-browser==7.1.0
