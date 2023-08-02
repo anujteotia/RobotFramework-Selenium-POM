@@ -1,7 +1,7 @@
 backports.cached-property==1.0.1
 certifi>=2022.12.07
 charset-normalizer==2.0.4
-grpcio==1.39.0
+grpcio==1.53.0
 grpcio-tools==1.39.0
 idna==3.2
 overrides==6.1.0
