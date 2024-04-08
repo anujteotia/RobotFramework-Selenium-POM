@@ -14,5 +14,6 @@ robotframework-pythonlibcore==3.0.0
 six==1.16.0
 typing-extensions==3.10.0.0
 typing-utils==0.1.0
-urllib3==1.26.6
+urllib3 ~> 1.26.18
 wrapt==1.12.1
+
